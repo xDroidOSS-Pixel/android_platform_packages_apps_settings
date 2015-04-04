@@ -32,6 +32,14 @@
         android:key="enhancedPinPrivacy"
         android:title="@string/lockpattern_settings_enhanced_pin_privacy_title"
         android:summary="@string/lockpattern_settings_enhanced_pin_privacy_summary" />
+    
+    <SwitchPreference
+        android:key="visible_error_pattern"
+        android:title="@string/lockpattern_settings_enable_error_path_title"/>
+
+    <SwitchPreference
+        android:key="visibledots"
+        android:title="@string/lockpattern_settings_enable_dots_title"/>
 
     <!-- available in pin/pattern/password -->
     <com.android.settings.display.TimeoutListPreference
