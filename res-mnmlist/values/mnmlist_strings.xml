@@ -276,4 +276,7 @@
 
     <!-- Pixel battery chart -->
     <string name="advanced_battery_preference_summary_google">Use Pixel Battery usage chart</string>
+
+    <!-- Location settings screen, setting summary for Assisted GPS switch -->
+    <string name="assisted_gps_summary">Download satellite assistance data from the internet which can greatly improve the GPS startup performance</string>
 </resources>
