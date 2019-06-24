@@ -253,4 +253,7 @@
     <!-- QS battery -->
     <string name="qs_battery_category_title">In QS Panel</string>
     <string name="qs_use_status_bar_battery_style">Follow status bar style</string>
+
+    <!-- Cloudflare DNS Option -->
+    <string name="private_dns_mode_cloudflare" translatable="false">Cloudflare DNS</string>
 </resources>
