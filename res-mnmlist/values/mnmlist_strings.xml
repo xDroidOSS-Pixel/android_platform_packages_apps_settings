@@ -143,4 +143,8 @@
     <!-- Partial screenshot -->
     <string name="click_partial_screenshot_title">Click to partial screenshot</string>
     <string name="click_partial_screenshot_summary">Short click Volume Down and Power to take partial screenshot</string>
+
+    <!-- Pulse on music track change -->
+    <string name="pulse_on_new_tracks_title">Ambient music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Show Ambient Display when a new music track is played</string>
 </resources>
