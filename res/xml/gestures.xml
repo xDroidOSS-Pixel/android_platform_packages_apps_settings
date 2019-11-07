@@ -21,6 +21,12 @@
     android:title="@string/gestures_title">
 
     <Preference
+        android:key="swipe_to_screenshot_summary"
+        android:title="@string/swipe_to_screenshot_title"
+        android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings"
+        settings:controller="com.android.settings.gestures.SwipeToScreenshotPreferenceController" />
+
+    <Preference
         android:key="gesture_system_navigation_input_summary"
         android:title="@string/system_navigation_title"
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
