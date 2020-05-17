@@ -139,5 +139,8 @@
     <!-- Captive portal -->
     <string name="captive_portal_title">Connectivity check</string>
     <string name="captive_portal_summary">Determine if the device can connect to the internet, by contacting Google. Also used to detect captive portals.</string>
-
+    
+    <!-- Partial screenshot -->
+    <string name="click_partial_screenshot_title">Click to partial screenshot</string>
+    <string name="click_partial_screenshot_summary">Short click Volume Down and Power to take partial screenshot</string>
 </resources>

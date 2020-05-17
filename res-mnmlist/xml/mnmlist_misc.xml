@@ -29,7 +29,13 @@
           android:title="@string/global_actions_advanced_reboot_title"
           android:summary="@string/global_actions_advanced_reboot_summary"
           android:defaultValue="true" />
-          
+
+     <com.xd.mnmlist.preferences.SystemSettingSwitchPreference
+            android:key="click_partial_screenshot"
+            android:title="@string/click_partial_screenshot_title"
+            android:summary="@string/click_partial_screenshot_summary"
+            android:defaultValue="false" />
+
      <!-- Game Space -->
      <PreferenceCategory
         android:title="@string/interfaces_gaming_mode">
