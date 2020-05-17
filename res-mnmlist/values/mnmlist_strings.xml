@@ -35,7 +35,7 @@
     <string name="lockscreen_title">Lock screen</string>
     <string name="lockscreen_summary">Always on display • Media Art • Charge info</string>
     <string name="interfaces_gaming_mode">Preference Game</string>
-
+        
     <!-- mnmlist Summary -->
     <string name="show_mnmlist_summary_title">Mnmlist summary in dashboard</string>
     <string name="show_mnmlist_summary_summary">Show mnmlist summary preference in main dashboard</string>
@@ -137,4 +137,7 @@
     <string name="captive_portal_title">Connectivity check</string>
     <string name="captive_portal_summary">Determine if the device can connect to the internet, by contacting Google. Also used to detect captive portals.</string>
 
+    <!-- Partial screenshot -->
+    <string name="click_partial_screenshot_title">Click to partial screenshot</string>
+    <string name="click_partial_screenshot_summary">Short click Volume Down and Power to take partial screenshot</string>
 </resources>
