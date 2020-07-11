@@ -125,4 +125,11 @@
     <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minutes</string>
 
+    <!-- Interface customization category -->
+    <string name="customization_category_title">Interfaces Statusbar</string>
+    
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Status bar items</string>
+    <string name="icon_manager_summary">Control visibility of status bar icons</string>
+
 </resources>
