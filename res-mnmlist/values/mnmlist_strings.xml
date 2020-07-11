@@ -125,4 +125,11 @@
     <!-- Running services - Background processes tab -->
     <string name="background_processes_settings_title">Background processes</string>
 
+    <!-- Interface customization category -->
+    <string name="customization_category_title">Interfaces Statusbar</string>
+    
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Status bar items</string>
+    <string name="icon_manager_summary">Control visibility of status bar icons</string>
+
 </resources>
