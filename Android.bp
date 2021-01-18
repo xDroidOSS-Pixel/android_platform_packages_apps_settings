@@ -107,6 +107,7 @@ android_library {
         "xd.xdui-preference",
         "accountfeatureprovidergoogle",
         "SettingsLibMainSwitchPreference",
+        "vendor.lineage.fastcharge-V1.0-java",
     ],
 
     libs: [
