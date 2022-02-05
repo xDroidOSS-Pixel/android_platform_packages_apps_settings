@@ -325,4 +325,9 @@
     <!-- Adaptive Charging Settings -->
     <string name="sys_adaptive_charging_title">Adaptive Charging Mode</string>
     <string name="sys_adaptive_charging_summary">System will enter adaptive power mode to optimize power consumption while charging.</string>
+
+    <!-- Per-app volume control -->
+    <string name="app_volume">App volume</string>
+    <string name="app_volume_title">Per-app volume control</string>
+    <string name="app_volume_summary">Allow to set different volume levels for each app</string>
 </resources>
