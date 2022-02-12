@@ -22,10 +22,10 @@
     settings:keywords="@string/keywords_android_version">
 
     <!-- xd. banner header -->
-    <Preference
+    <com.android.settingslib.widget.LayoutPreference
         android:key="xd_firmware_header"
-        android:fragment="com.android.settings.deviceinfo.aboutxd.AboutXDFragments"
-        settings:layout="@layout/xd_firmware_header"/>
+        android:layout="@layout/xd_firmware_header"
+        settings:controller="com.xdroidui.preferences.xdSimplyController"/>
 
     <Preference
         android:key="xd_build_status"
@@ -33,7 +33,14 @@
         android:summary="@string/xd_summary_placeholder"
         android:icon="@drawable/xd_build"
         settings:controller="com.xdroidui.preferences.xdBuildMaintainer"
-        settings:layout="@layout/xd_pref_card_sin-accent"/>
+        settings:layout="@layout/xd_pref_card_sin_tertiary">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="id.xyzprjkt.xd.xdcore"
+            android:targetClass="id.xyzprjkt.xd.xdcore.updater.UpdaterActivity"/>
+
+    </Preference>
 
     <!-- Firmware Category -->
     <PreferenceCategory
@@ -43,7 +50,7 @@
         <!-- Android version -->
         <Preference
             android:key="os_firmware_version"
-            android:title="@string/firmware_version"
+            android:title="@string/android_plat"
             android:summary="@string/summary_placeholder"
             settings:layout="@layout/xd_pref_card_top"
             settings:enableCopying="true"

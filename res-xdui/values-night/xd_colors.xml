@@ -20,5 +20,8 @@
      <color name="xd_pref_card_color">@android:color/system_neutral1_800</color>
      <color name="xd_background1">@android:color/system_neutral1_900</color>
      <color name="xd_background2">@android:color/system_neutral1_800</color>
+     <color name="xd_clock_bg">@android:color/system_accent1_1000</color>
+     <color name="xd_clock_color">@android:color/system_accent1_50</color>
+     <color name="xd_simply_mask">#50000000</color>
 
 </resources>

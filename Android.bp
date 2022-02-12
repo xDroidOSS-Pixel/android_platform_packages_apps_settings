@@ -54,7 +54,7 @@ android_library {
     ],
 
     srcs: ["src/**/*.java",
-           "src/**/*.kt"
+           "src/**/*.kt",
            "src-xdui/**/*.java",
            "src-mnmlist/**/*.java",
     ],
@@ -64,7 +64,7 @@ android_library {
                     "res-mnmlist",
     ],
 
-    aaptflags: ["--extra-packages com.xdroid.mnmlist",
+    aaptflags: ["--extra-packages com.xd.mnmlist",
     ],
 
     static_libs: [
@@ -101,6 +101,8 @@ android_library {
         "SettingsLibActivityEmbedding",
         "Settings-change-ids",
         "SystemUIUnfoldLib",
+        "xd.xdui-preference",
+        "accountfeatureprovidergoogle",
     ],
 
     libs: [
@@ -155,4 +157,10 @@ filegroup {
 filegroup {
     name: "Settings_manifest",
     srcs: ["AndroidManifest.xml"],
+}
+
+java_import {
+    name: "accountfeatureprovidergoogle",
+    jars: ["libs/accountfeatureprovidergoogle.jar"],
+    sdk_version: "current",
 }

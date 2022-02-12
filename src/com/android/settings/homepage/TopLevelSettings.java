@@ -19,19 +19,28 @@ package com.android.settings.homepage;
 import static com.android.settings.search.actionbar.SearchMenuController.NEED_SEARCH_ICON_IN_ACTION_BAR;
 import static com.android.settingslib.search.SearchIndexable.MOBILE;
 
+import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
+import android.content.ComponentName;
 import android.content.res.Configuration;
+import android.content.Intent;
+import android.content.pm.UserInfo;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.UserManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 import androidx.preference.Preference;
+import androidx.preference.SwitchPreference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceScreen;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,6 +48,7 @@ import androidx.window.embedding.ActivityEmbeddingController;
 
 import com.android.settings.R;
 import com.android.settings.Utils;
+import com.android.settings.deviceinfo.DeviceNamePreferenceController;
 import com.android.settings.activityembedding.ActivityEmbeddingRulesController;
 import com.android.settings.activityembedding.ActivityEmbeddingUtils;
 import com.android.settings.core.SubSettingLauncher;
@@ -52,9 +62,26 @@ import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.drawer.Tile;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.android.settings.network.InternetPreferenceController;
+import com.android.settings.network.TetherPreferenceController;
+import com.android.settings.network.AirplaneModePreferenceController;
+
+import com.android.settings.core.OnActivityResultListener;
+import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
+import com.android.settingslib.core.lifecycle.Lifecycle;
+import com.android.settingslib.widget.LayoutPreference;
+
+import android.os.UserHandle;
+import android.provider.Settings;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 @SearchIndexable(forTarget = MOBILE)
 public class TopLevelSettings extends DashboardFragment implements SplitLayoutListener,
-        PreferenceFragmentCompat.OnPreferenceStartFragmentCallback {
+        PreferenceFragmentCompat.OnPreferenceStartFragmentCallback, OnActivityResultListener {
 
     private static final String TAG = "TopLevelSettings";
     private static final String SAVED_HIGHLIGHT_MIXIN = "highlight_mixin";
@@ -93,6 +120,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     public void onAttach(Context context) {
         super.onAttach(context);
         HighlightableMenu.fromXml(context, getPreferenceScreenResId());
+        use(AirplaneModePreferenceController.class).setFragment(this);
         use(SupportPreferenceController.class).setActivity(getActivity());
     }
 
@@ -178,6 +206,8 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                     /* scrollNeeded= */ false);
         }
         super.onStart();
+        initMnmlistAdditions();
+        initMyAccountCard();
     }
 
     private boolean isOnlyOneActivityInTask() {
@@ -197,21 +227,73 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
-        int tintColor = Utils.getHomepageIconColor(getContext());
-        iteratePreferences(preference -> {
-            Drawable icon = preference.getIcon();
-            if (icon != null) {
-                icon.setTint(tintColor);
-            }
-        });
+        initPreferenceCard();
+    }
+
+    private void initMnmlistAdditions(){
+
+        final boolean mnmlistSummary = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.MNMLIST_SUMMARY, 0, UserHandle.USER_CURRENT) != 0;
+        Preference mnmlistPref = getPreferenceScreen().findPreference("top_level_mnmlist");
+
+        if (!mnmlistSummary){
+            mnmlistPref.setSummary(null);
+        } else {
+            mnmlistPref.setSummary(R.string.mnmlist_summary);
+        }
+    }
+
+    private void initPreferenceCard(){
+
+        LayoutPreference myAccount = getPreferenceScreen().findPreference("xd_my_account");
+        Preference myPhone = getPreferenceScreen().findPreference("xd_my_phone");
+        SwitchPreference switchPref = getPreferenceScreen().findPreference("airplane_mode");
+
         for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
             Preference pref = getPreferenceScreen().getPreference(i);
             if (pref.isVisible() && pref.getTitle() != null && 
                 pref.getLayoutResource() != R.layout.xd_dashboard_pref_top && 
+                pref.getLayoutResource() != R.layout.xd_dashboard_pref_sin && 
                 pref.getLayoutResource() != R.layout.xd_dashboard_pref_bot && 
-                pref.getLayoutResource() != R.layout.xd_dashboard_phone ) {
-                pref.setLayoutResource(R.layout.xd_dashboard_pref_mid);
+                pref.getLayoutResource() != R.layout.xd_dashboard_pref_mid && 
+                pref.getLayoutResource() != R.layout.xd_dashboard_pref_mnmlist ) {
+                pref.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
             }
+            if (pref.getKey().contains("wellbeing")){
+                pref.setLayoutResource(R.layout.xd_dashboard_pref_wellbeing);
+            }
+        }
+        switchPref.setLayoutResource(R.layout.xd_dashboard_prefswitch_top);
+        myAccount.setLayoutResource(R.layout.xd_dashboard_account);
+        myPhone.setLayoutResource(R.layout.xd_dashboard_phone);
+    }
+
+    private void initMyAccountCard(){
+        final LayoutPreference myAccountPref = getPreferenceScreen().findPreference("xd_my_account");
+        final Activity context = getActivity();
+
+        View root = myAccountPref.findViewById(R.id.container);
+        ImageView avatarView = myAccountPref.findViewById(R.id.xd_avatar);
+        TextView ownerName = myAccountPref.findViewById(R.id.xd_account_owner);
+        Bundle bundle = getArguments();
+        
+        root.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
+                startActivity(intent);
+            }
+        });
+
+        final int iconId = bundle.getInt("icon_id", 0);
+        if (iconId == 0) {
+            final UserManager userManager = (UserManager) getActivity().getSystemService(
+                    Context.USER_SERVICE);
+            final UserInfo userInfo = Utils.getExistingUser(userManager,
+                    android.os.Process.myUserHandle());
+            ownerName.setText(userInfo.name);
+            avatarView.setImageDrawable(com.android.settingslib.Utils.getUserIcon(getActivity(), userManager, userInfo));
         }
     }
 
@@ -371,6 +453,35 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         }
 
         void doForEach(Preference preference);
+    }
+
+    @Override
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
+        return buildPreferenceControllers(context, getSettingsLifecycle(), mMetricsFeatureProvider, this /* fragment */);
+    }
+
+    private static List<AbstractPreferenceController> buildPreferenceControllers(Context context,
+            Lifecycle lifecycle, MetricsFeatureProvider metricsFeatureProvider, Fragment fragment) {
+        final InternetPreferenceController internetPreferenceController =
+                new InternetPreferenceController(context, lifecycle);
+
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new TetherPreferenceController(context, lifecycle));
+        if (internetPreferenceController != null) {
+            controllers.add(internetPreferenceController);
+        }
+        return controllers;
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        switch (requestCode) {
+            case AirplaneModePreferenceController.REQUEST_CODE_EXIT_ECM:
+                use(AirplaneModePreferenceController.class)
+                        .onActivityResult(requestCode, resultCode, data);
+                break;
+        }
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

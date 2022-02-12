@@ -48,8 +48,10 @@
     <string name="xd_dashboard_greet12">Hey, There i\'am using xdroid</string>
     <string name="xd_dashboard_device">About phone</string>
     <string name="xd_dashboard_account">Account</string>
-    <string name="xd_dashboard_network">Internet</string>
-    <string name="xd_dashboard_conectivity">Connectivity</string>    
+    <string name="xd_dashboard_account_summary">Manage all user profile available in this device here</string>
+    <string name="xd_dashboard_network">Connectivity</string>
+    <string name="xd_dashboard_portable_hotspot">Portable hotspot</string>
+    <string name="xd_dashboard_conectivity">Devices</string>    
     <string name="xd_dashboard_display">Display</string>
     <string name="xd_dashboard_battery">Battery</string>
     <string name="xd_dashboard_sound">Sound</string>
@@ -61,11 +63,11 @@
     <string name="xd_dashboard_security">Security</string>
     <string name="xd_dashboard_accessibility">Accessibility</string>
     <string name="xd_dashboard_system">Other</string>    
+    <string name="xd_dashboard_wellbeing">Digital Wellbeing</string>
     <string name="xd_dashboard_support">Support</string>
 
     <!-- xd. mnmlist. -->
     <string name="xd_dashboard_xzrypr">Mnmlist</string>
-    <string name="xd_dashboard_xzrypr_summary">Get your favorite customization here</string>
 
     <!-- xd. Preferences -->
     <string name="xd_firmware_info_summary">Information about firmware in this phone</string>
@@ -96,11 +98,17 @@
     <string name="xd_about_contributor_cat">Contributor</string>
 
     <!-- xd. About -->
-    <string name="xd_about_desc">xdroid is a custom ROM based on AOSP which focusing on simple and minimalism UI while keep maintaining the smoothness and optimization provided by AOSP.</string>
+    <string name="xd_about_desc">xdroid is an AOSP-based custom Android ROM which is focusing on simple and minimalism while keeping the smoothness and optimization provided by AOSP.</string>
     <string name="xd_about_core_xyzuan">Jody Yuantoro</string>
     <string name="xd_about_core_xyzuan_role">Founder, Lead Developer and UI Designer</string>
     <string name="xd_about_core_friction">Firman Yanuar</string>
     <string name="xd_about_core_friction_role">UI and UX Designer</string>
+    <string name="xd_about_core_eky">Eky Zakariah</string>
+    <string name="xd_about_core_eky_role">Frontend Developer</string>
+    <string name="xd_about_core_waxaranai">Waxaranai</string>
+    <string name="xd_about_core_waxaranai_role">Backend Developer</string>
+    <string name="xd_about_core_basokuahenakrasanya">Ardika Gymnastiyar</string>
+    <string name="xd_about_core_basokuahenakrasanya_role">Project Manager</string>
     <string name="xd_about_contributor_rdclxvi">Royan AK</string>
     <string name="xd_about_contributor_rdclxvi_role">Indonesia Translator</string>
     <string name="xd_about_contributor_iszon">Iszon</string>
@@ -110,18 +118,13 @@
 
     <!-- xd. About Phone -->
     <string name="xd_device_name">Device name</string>
-    <string name="xd_device_name_summary">Unknown</string>
     <string name="xd_chipset_type">Chipset</string>
-    <string name="xd_chipset_type_summary">Unknown</string>
-    <string name="xd_gpu">GPU</string>
-    <string name="xd_gpu_summary">Unknown</string>
+    <string name="xd_gpu">GPU</string>    
     <string name="xd_camera_mp">Camera</string>
-    <string name="xd_camera_mp_summary">Unknown</string>
     <string name="xd_screen_type">Screen</string>
-    <string name="xd_screen_type_summary">Unknown</string>
-
+    
     <!-- xd. Build Status -->
-    <string name="xd_build_status">Your devices is not officially supported!</string>
+    <string name="xd_build_status">Your device is not officially supported!</string>
     <string name="xd_build_maintained_summary">Maintained by %s</string>
     <string name="xd_build_unmaintained_summary">This build are not maintained officially</string>
 

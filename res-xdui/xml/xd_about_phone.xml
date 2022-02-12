@@ -128,7 +128,7 @@
             settings:layout="@layout/xd_pref_card_mid"
             android:title="@string/xd_wifi_saved"
             android:summary="@string/view_saved_network"
-            android:fragment="com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings"
+            android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"
             settings:enableCopying="false"/>
 
         <!-- Factory Wi-Fi MAC address -->

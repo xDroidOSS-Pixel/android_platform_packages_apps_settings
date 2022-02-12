@@ -24,6 +24,7 @@
      <!-- xd. Preference Card -->
      <dimen name="xd_pref_card_radius">28dp</dimen>
      <dimen name="xd_pref_card_radius-outer">5dp</dimen>
+     <dimen name="xd_pref_card_vertical_padding">32dp</dimen>
      <dimen name="xd_pref_card_horizontal_padding">16dp</dimen>
      <dimen name="xd_pref_card_horizontal_padding-negative">-16dp</dimen>
 

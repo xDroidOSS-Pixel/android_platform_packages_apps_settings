@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2018 The Android Open Source Project
-     Copyright (C) 2022 The xdroidOSS & xyzprjkt
+     Copyright (C) 2022 The xdroidOSS, xyzprjkt
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
+
           http://www.apache.org/licenses/LICENSE-2.0
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -38,13 +41,19 @@
             <androidx.core.widget.NestedScrollView
                 android:id="@+id/main_content_scrollable_container"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:scrollbars="none">
 
                 <LinearLayout
                     android:id="@+id/homepage_container"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/suggestion_container_two_pane"
+                        layout="@layout/suggestion_container_two_pane"
+                        android:visibility="gone"/>
 
                     <FrameLayout
                         android:id="@+id/contextual_cards_content"
@@ -78,28 +87,14 @@
             android:orientation="vertical"
             app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">
 
-            <ImageView
-                android:id="@+id/account_avatar"
-                android:layout_width="@dimen/avatar_length"
-                android:layout_height="@dimen/avatar_length"
-                android:layout_marginTop="@dimen/avatar_margin_top"
-                android:layout_marginEnd="@dimen/avatar_margin_end"
-                android:layout_gravity="end"
-                android:visibility="invisible"
-                android:accessibilityTraversalAfter="@id/homepage_title"
-                android:contentDescription="@string/search_bar_account_avatar_content_description"/>
+            <include
+                android:id="@+id/homepage_app_bar_regular_phone_view"
+                layout="@layout/settings_homepage_app_bar_regular_phone_layout"/>
 
-            <TextView
-                android:id="@+id/homepage_title"
-                android:text="@string/xd_dashboard_greet_default"
-                style="@style/xd_dashboard_header_title"/>
-
-            <FrameLayout
-                android:id="@+id/suggestion_content"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <include layout="@layout/search_bar"/>
+            <include
+                android:id="@+id/homepage_app_bar_two_pane_view"
+                layout="@layout/settings_homepage_app_bar_two_pane_layout"
+                android:visibility="gone"/>
 
         </LinearLayout>
     </com.google.android.material.appbar.AppBarLayout>

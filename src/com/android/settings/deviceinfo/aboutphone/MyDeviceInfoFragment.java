@@ -44,6 +44,9 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.LayoutPreference;
+import com.android.settings.widget.ValidatedEditTextPreference;
+
+import androidx.preference.Preference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -88,6 +91,23 @@ public class MyDeviceInfoFragment extends DashboardFragment
     protected int getPreferenceScreenResId() {
         return R.xml.xd_about_phone;
     }
+
+    @Override
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        super.onCreatePreferences(savedInstanceState, rootKey);
+        try {        
+            ValidatedEditTextPreference deviceName = getPreferenceScreen().findPreference("device_name");
+            Preference brandedAccount = getPreferenceScreen().findPreference("branded_account");
+            Preference emergencyPref = getPreferenceScreen().findPreference("emergency_info");
+
+            if (brandedAccount.isVisible() || emergencyPref.isVisible() ) {
+                deviceName.setLayoutResource(R.layout.xd_pref_card_top);
+            } else {
+                deviceName.setLayoutResource(R.layout.xd_pref_card_sin);
+            }
+        } catch (NullPointerException e) {}
+    }
+
 
     @Override
     protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {

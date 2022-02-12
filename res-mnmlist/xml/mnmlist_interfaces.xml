@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright 2021 xdroid, xyzprjkt
+<!-- Copyright (C) 2022 The xdroidOSS, xyzprjkt
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,15 +13,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/container"
-    style="@style/xd_pref_card_sin-accent"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+<PreferenceScreen
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:title="@string/interfaces_title"
+     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <include
-        layout="@layout/xd_pref"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-</FrameLayout>
+</PreferenceScreen>

@@ -315,7 +315,7 @@ public class WifiConfigController2 implements TextWatcher,
                         : NOT_HIDDEN_NETWORK);
 
                 final int prefMacValue = WifiPrivacyPreferenceController2
-                        .translateMacRandomizedValueToPrefValue(mWifiEntry.getPrivacy());
+                        .translateMacRandomizedValueToPrefValue(config.macRandomizationSetting);
                 mPrivacySettingsSpinner.setSelection(prefMacValue);
 
                 if (config.getIpConfiguration().getIpAssignment() == IpAssignment.STATIC) {
