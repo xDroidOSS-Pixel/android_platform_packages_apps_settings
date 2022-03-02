@@ -53,5 +53,9 @@
 
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store" translatable="false">Google Play</string>
+    
+    <!-- Hotspot -->
+    <string name="wifi_hotspot_hidden_ssid_title">Hidden network</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Your mobile hotspot\'s name won\'t appear in the list of available WLAN networks.</string>
 
 </resources>
