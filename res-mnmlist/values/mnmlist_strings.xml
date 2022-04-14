@@ -274,4 +274,6 @@
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
 
+    <!-- Pixel battery chart -->
+    <string name="advanced_battery_preference_summary_google">Use Pixel Battery usage chart</string>
 </resources>
