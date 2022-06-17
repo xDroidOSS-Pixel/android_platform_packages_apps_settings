@@ -64,4 +64,14 @@
         android:title="@string/reticker_colored_title"
         android:summary="@string/reticker_colored_summary"
         android:defaultValue="false" />
+     
+     <!-- Ignore secure window -->
+     <PreferenceCategory
+        android:title="@string/privacy">
+          <com.xd.mnmlist.preferences.SecureSettingSwitchPreference
+          android:key="window_ignore_secure"
+          android:title="@string/ignore_window_secure_title"
+          android:summary="@string/ignore_window_secure_summary"
+          android:defaultValue="false"/>
+     </PreferenceCategory>
 </PreferenceScreen>
