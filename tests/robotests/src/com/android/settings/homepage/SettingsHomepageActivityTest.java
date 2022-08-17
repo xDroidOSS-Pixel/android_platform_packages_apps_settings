@@ -131,7 +131,7 @@ public class SettingsHomepageActivityTest {
     public void showHomepageWithSuggestion_showSuggestion() {
         final SettingsHomepageActivity activity = Robolectric.buildActivity(
                 SettingsHomepageActivity.class).create().get();
-        final View viewRoot = activity.findViewById(R.id.settings_homepage_container);
+        final View viewRoot = activity.findViewById(R.id.xd_dashboard_container);
         final View suggestionTile = activity.findViewById(R.id.suggestion_content);
 
         activity.showHomepageWithSuggestion(true);
@@ -144,7 +144,7 @@ public class SettingsHomepageActivityTest {
     public void showHomepageWithSuggestion_hideSuggestion() {
         final SettingsHomepageActivity activity = Robolectric.buildActivity(
                 SettingsHomepageActivity.class).create().get();
-        final View viewRoot = activity.findViewById(R.id.settings_homepage_container);
+        final View viewRoot = activity.findViewById(R.id.xd_dashboard_container);
         final View suggestionTile = activity.findViewById(R.id.suggestion_content);
 
         activity.showHomepageWithSuggestion(false);

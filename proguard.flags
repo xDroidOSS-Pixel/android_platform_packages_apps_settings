@@ -13,6 +13,7 @@
     *;
 }
 
+-keep class com.xd.mnmlist.settings.**
 -keep class * extends com.android.settings.core.TogglePreferenceController {
     *;
 }

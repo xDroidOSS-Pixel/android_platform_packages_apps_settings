@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+     Copyright (C) 2022 xdroid & xyzprjkt
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Dashboard -->
+    <string name="mnmlist_title">mnmlist</string>
+    <string name="gestures_title">Gestures</string>
+    <string name="gestures_summary">Operate your device way easier</string>
+    <string name="misc_title">Miscellaneous</string>
+    <string name="misc_summary">Other features option</string>
+    <string name="interfaces_title">System interfaces</string>
+    <string name="interfaces_summary">Personalize how your system interfaces looks like</string>
+    <string name="interfaces_style_title">System style</string>
+    <string name="interfaces_statusbar_title">Statusbar</string>
+    <string name="interfaces_battery_title">Battery</string>
+    <string name="buttons_title">Buttons</string>
+    <string name="buttons_summary">Customize your buttons functionality</string>
+    <string name="quicksettings_title">Quick Settings</string>
+    <string name="quicksettings_summary">Customize your quick settings looks</string>
+    <string name="lockscreen_title">Lock Screen</string>
+    <string name="lockscreen_summary">Personalize your lockscreen page</string>
+
+</resources>

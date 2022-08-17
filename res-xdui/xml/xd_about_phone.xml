@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  
+  Copyright (C) 2018 The Android Open Source Project
+  Copyright (C) 2021-2022 xdroid, xyzprjkt
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="my_device_info_pref_screen"
+    android:title="@string/xd_about_phone">
+
+    <!-- xd. About Phone header -->
+    <Preference
+        android:key="xd_aboutphone_header"
+        settings:layout="@layout/xd_about_phone_header"
+        android:selectable="false"/>
+
+    <!-- Owner Category -->
+    <PreferenceCategory
+        android:key="xd_category_owner"
+        android:title="@string/xd_about_phone_owner_cat">
+
+        <!-- Device name -->
+        <com.android.settings.widget.ValidatedEditTextPreference
+            android:key="device_name"
+            settings:layout="@layout/xd_pref_card_top"
+            android:title="@string/xd_device_owner"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
+            settings:enableCopying="true"/>
+
+        <Preference
+            android:key="emergency_info"
+            settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/emergency_info_title"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
+
+        <!-- Account name -->
+        <Preference
+            android:key="branded_account"
+            settings:layout="@layout/xd_pref_card_bot"
+            android:title="@string/my_device_info_account_preference_title"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
+
+    </PreferenceCategory>
+
+    <!-- Software & Hardware Category -->
+    <PreferenceCategory
+        android:key="xd_category_information"
+        android:title="@string/xd_about_phone_information_cat">
+
+        <!-- Firmware information -->
+        <Preference
+            android:key="firmware_version"
+            settings:layout="@layout/xd_pref_card_top"
+            android:title="@string/xd_firmware_info"
+            android:summary="@string/xd_firmware_info_summary"
+            android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"/>
+
+        <!-- Model & hardware -->
+        <Preference
+            android:key="device_model"
+            settings:layout="@layout/xd_pref_card_bot"
+            android:title="@string/xd_hardware_info"
+            android:summary="@string/xd_hardware_info_summary"
+            android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
+            settings:enableCopying="true"
+            settings:keywords="@string/keywords_model_and_hardware"/>
+
+    </PreferenceCategory>
+
+    <!-- Legality Category -->
+    <PreferenceCategory
+        android:key="xd_category_legalregulator"
+        android:title="@string/xd_about_phone_legalregulator_cat">
+
+        <!-- Legal information -->
+        <Preference
+            android:key="legal_container"
+            settings:layout="@layout/xd_pref_card_sin"
+            android:title="@string/legal_information"
+            android:summary="@string/xd_legal_information_summary"
+            android:fragment="com.android.settings.LegalSettings"/>
+
+        <!-- Regulatory labels -->
+        <Preference
+            android:key="regulatory_info"
+            settings:layout="@layout/xd_pref_card_sin"
+            android:title="@string/regulatory_labels"
+            android:summary="@string/xd_regulatory_summary">
+            <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
+        </Preference>
+
+    </PreferenceCategory>
+
+    <!-- Network Category -->
+    <PreferenceCategory
+        android:key="xd_category_network"
+        android:title="@string/xd_about_phone_network_cat">
+
+        <!--IP address -->
+        <Preference
+            android:key="wifi_ip_address"
+            settings:layout="@layout/xd_pref_card_top"
+            android:title="@string/wifi_ip_address"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"/>
+
+        <!-- Wi-Fi MAC address -->
+        <Preference
+            android:key="saved_accesspoints_wifi_mac_address"
+            settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/xd_wifi_saved"
+            android:summary="@string/view_saved_network"
+            android:fragment="com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings"
+            settings:enableCopying="false"/>
+
+        <!-- Factory Wi-Fi MAC address -->
+        <Preference
+            android:key="wifi_mac_address"
+            settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/status_device_wifi_mac_address"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"/>
+
+        <!-- Bluetooth address -->
+        <Preference
+            android:key="bt_address"
+            settings:layout="@layout/xd_pref_card_bot"
+            android:title="@string/status_bt_address"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"/>
+
+    </PreferenceCategory>
+
+    <!-- General Category -->
+    <PreferenceCategory
+        android:key="xd_category_general"
+        android:title="@string/xd_general_cat">
+
+        <!-- Device up time -->
+        <Preference
+            android:key="up_time"
+            settings:layout="@layout/xd_pref_card_top"
+            android:title="@string/status_up_time"
+            android:summary="@string/summary_placeholder"/>
+
+        <!-- Build number -->
+        <Preference
+            android:key="build_number"
+            settings:layout="@layout/xd_pref_card_bot"
+            android:title="@string/build_number"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"
+            settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

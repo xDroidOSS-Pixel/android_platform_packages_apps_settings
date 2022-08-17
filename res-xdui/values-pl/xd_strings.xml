@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2021 xdroid, xyzprjkt
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- xd. version -->
+    <string name="xd_revision">Wersja XD</string>
+    <!-- AOSP Revision -->
+    <string name="aosp_revision">wersja AOSP</string>
+    <!-- xd. fake toolbar -->
+    <string name="xd_firmware_info">Informacje o oprogramowaniu</string>
+    <string name="xd_hardware_info">Informacje o urządzeniu</string>
+    <string name="xd_about_phone">O telefonie</string>
+    <string name="xd_about">Informacje o xdroid</string>
+    <!-- xd. Dashboard -->
+    <string name="xd_dashboard_greet">Czego szukasz?</string>
+    <string name="xd_dashboard_device">O telefonie</string>
+    <string name="xd_dashboard_account">Konto</string>
+    <string name="xd_dashboard_network">Internet</string>
+    <string name="xd_dashboard_conectivity">Łączność</string>
+    <string name="xd_dashboard_display">Wyświetlacz</string>
+    <string name="xd_dashboard_battery">Bateria</string>
+    <string name="xd_dashboard_sound">Dźwięk</string>
+    <string name="xd_dashboard_apps">Aplikacje</string>
+    <string name="xd_dashboard_storage">Pamięć</string>
+    <string name="xd_dashboard_privacy">Prywatność</string>
+    <string name="xd_dashboard_location">Lokalizacja</string>
+    <string name="xd_dashboard_security">Bezpieczeństwo</string>
+    <string name="xd_dashboard_accessibility">Dostępność</string>
+    <string name="xd_dashboard_system">Inne</string>
+    <string name="xd_dashboard_support">Wsparcie</string>
+    <!-- xd. zxrypr -->
+    <string name="xd_dashboard_xzrypr">xzrypr</string>
+    <string name="xd_dashboard_xzrypr_summary">Zdobądź swoje ulubione dostosowania</string>
+    <!-- xd. Preferences -->
+    <string name="xd_firmware_info_summary">Informacje o oprogramowaniu w tym telefonie</string>
+    <string name="xd_hardware_info_summary">Informacje o sprzęcie w tym telefonie</string>
+    <string name="xd_device_owner">Nazwa właściciela</string>
+    <string name="xd_legal_information_summary">Informacje prawne dotyczące licencji</string>
+    <string name="xd_regulatory_summary">Informacje regulacyjne</string>
+    <string name="xd_wifi_saved">Zapisana sieć</string>
+    <string name="blurs_effect">Efekt rozmycia</string>
+    <string name="dark_ui_mode_summary">Włącz ciemny motyw na tym urządzeniu</string>
+    <!-- xd. Preferences Category -->
+    <string name="xd_about_phone_owner_cat">Informacje o właścicielu</string>
+    <string name="xd_about_phone_information_cat">Informacje o urządzeniu</string>
+    <string name="xd_about_phone_legalregulator_cat">Informacje prawne i regulacyjne</string>
+    <string name="xd_about_phone_network_cat">Informacje o sieci</string>
+    <string name="xd_firmware_version_cat">Wersja oprogramowania</string>
+    <string name="xd_firmware_security_cat">Bezpieczeństwo oprogramowania</string>
+    <string name="xd_general_cat">Ogólne</string>
+    <string name="xd_category_ui">Interfejsy użytkownika</string>
+    <string name="xd_category_screen">Ekran</string>
+    <string name="xd_category_density">Zagęszczenie</string>
+    <string name="xd_category_gesture">Gesty ekranu</string>
+    <string name="xd_category_brightness">Jasność</string>
+    <string name="xd_about_core_team_cat">Główny programista</string>
+    <!-- xd. About -->
+    <string name="xd_about_desc">xdroid to niestandardowy ROM oparty na AOSP, który koncentruje się na prostym i minimalnym interfejsie użytkownika, utrzymując jednocześnie płynność i optymalizację zapewnioną przez AOSP.</string>
+    <string name="xd_about_core_xyzuan">Jody Yuantoro</string>
+    <string name="xd_about_core_xyzuan_role">Założyciel, główny programista i projektant interfejsu użytkownika</string>
+    <string name="xd_about_core_friction">Firman Yanuar</string>
+    <string name="xd_about_core_friction_role">Projektant interfejsu użytkownika i UX</string>
+    <!-- xd. About Phone -->
+    <string name="xd_device_name">Nazwa urządzenia</string>
+    <string name="xd_chipset_type">Chipset</string>
+    <string name="xd_gpu">GPU</string>
+    <string name="xd_camera_mp">Aparat</string>
+    <string name="xd_screen_type">Ekran</string>
+</resources>

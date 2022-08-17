@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2019 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/xd_firmware_info"
+    settings:keywords="@string/keywords_android_version">
+
+    <!-- xd. banner header -->
+    <Preference
+        android:key="xd_firmware_header"
+        android:fragment="com.android.settings.deviceinfo.aboutxd.AboutXDFragments"
+        settings:layout="@layout/xd_firmware_header"/>
+
+    <Preference
+        android:key="xd_build_status"
+        android:title="@string/xd_build_status"
+        android:summary="@string/xd_summary_placeholder"
+        android:icon="@drawable/xd_build"
+        settings:controller="com.xdroidui.preferences.xdBuildMaintainer"
+        settings:layout="@layout/xd_pref_card_sin-accent"/>
+
+    <!-- Firmware Category -->
+    <PreferenceCategory
+        android:key="xd_category_firmware_version"
+        android:title="@string/xd_firmware_version_cat">
+
+        <!-- Android version -->
+        <Preference
+            android:key="os_firmware_version"
+            android:title="@string/firmware_version"
+            android:summary="@string/summary_placeholder"
+            settings:layout="@layout/xd_pref_card_top"
+            settings:enableCopying="true"
+            settings:searchable="false"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+
+        <!-- aosp. version -->
+        <Preference
+            android:key="aosp_version"
+            android:title="@string/aosp_revision"
+            android:summary="@string/summary_placeholder"
+            settings:layout="@layout/xd_pref_card_mid"
+            settings:enableCopying="true"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.aospVersionPreferenceController"/>
+
+
+        <!-- xd. version -->
+        <Preference
+            android:key="xd_version"
+            android:title="@string/xd_revision"
+            android:summary="@string/summary_placeholder"
+            settings:layout="@layout/xd_pref_card_bot"
+            settings:enableCopying="true"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.xdVersionPreferenceController"/>
+
+    </PreferenceCategory>
+
+    <!-- Security FW Category -->
+    <PreferenceCategory
+        android:key="xd_category_firmware_security"
+        android:title="@string/xd_firmware_security_cat">
+
+        <!-- Security patch -->
+        <Preference
+            android:key="security_key"
+            android:title="@string/security_patch"
+            settings:layout="@layout/xd_pref_card_sin"
+            settings:enableCopying="true"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
+
+    </PreferenceCategory>
+
+    <!-- General Category -->
+    <PreferenceCategory
+        android:key="xd_category_general"
+        android:title="@string/xd_general_cat">
+        
+        <!-- Baseband -->
+        <Preference
+            android:key="base_band"
+            android:title="@string/baseband_version"
+            android:summary="@string/summary_placeholder"
+            settings:layout="@layout/xd_pref_card_top"
+            settings:enableCopying="true"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
+
+        <!-- Kernel -->
+        <Preference
+            android:key="kernel_version"
+            android:title="@string/kernel_version"
+            android:summary="@string/summary_placeholder"
+            settings:layout="@layout/xd_pref_card_mid"
+            settings:enableCopying="true"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
+
+        <!-- Build -->
+        <Preference
+            android:key="os_build_number"
+            android:title="@string/build_number"
+            android:summary="@string/summary_placeholder"
+            settings:layout="@layout/xd_pref_card_bot"
+            settings:enableCopying="true"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
+    
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -53,7 +53,19 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: ["src/**/*.java",
+           "src/**/*.kt"
+           "src-xdui/**/*.java",
+           "src-mnmlist/**/*.java",
+    ],
+
+    resource_dirs: ["res",
+                    "res-xdui",
+                    "res-mnmlist",
+    ],
+
+    aaptflags: ["--extra-packages com.xdroid.mnmlist",
+    ],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
