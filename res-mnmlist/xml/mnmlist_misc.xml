@@ -24,4 +24,10 @@
           android:summary="@string/show_mnmlist_summary_summary"
           android:defaultValue="true"/>
 
+     <com.xd.mnmlist.preferences.SecureSettingSwitchPreference
+          android:key="advanced_reboot"
+          android:title="@string/global_actions_advanced_reboot_title"
+          android:summary="@string/global_actions_advanced_reboot_summary"
+          android:defaultValue="true" />
+
 </PreferenceScreen>
