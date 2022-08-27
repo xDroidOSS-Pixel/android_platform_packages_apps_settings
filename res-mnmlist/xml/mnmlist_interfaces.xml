@@ -34,5 +34,10 @@
           android:title="@string/network_traffic_title"
           android:summary="@string/network_traffic_summary"
           android:fragment="com.xd.mnmlist.fragments.NetworkTrafficSettings" />
-    
+     
+     <Preference
+          android:key="battery_settings"
+          android:title="@string/battery_style_title"
+          android:summary="@string/battery_style_summary"
+          android:fragment="com.xd.mnmlist.fragments.StatusBarBattery" />
 </PreferenceScreen>
