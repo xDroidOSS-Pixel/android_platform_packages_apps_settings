@@ -30,6 +30,7 @@
     <string name="interfaces_style_title">Gaya sistem</string>
     <string name="interfaces_statusbar_title">Bilah status</string>
     <string name="interfaces_battery_title">Baterai</string>
+    <string name="interfaces_gaming_mode">Preference Game</string>
     <string name="buttons_title">Tombol</string>
     <string name="buttons_summary">Volume bangun • Kontrol pemutaran</string>
     <string name="quicksettings_title">Setelan Cepat</string>
