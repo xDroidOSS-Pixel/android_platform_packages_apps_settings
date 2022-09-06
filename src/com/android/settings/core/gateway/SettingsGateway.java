@@ -182,6 +182,8 @@ import com.xd.mnmlist.Dashboard;
 
 import ink.kscope.settings.wifi.tether.WifiTetherClientManager;
 
+import com.google.android.settings.security.SecurityHubDashboard;
+
 public class SettingsGateway {
 
     /**
@@ -351,6 +353,7 @@ public class SettingsGateway {
             TurnScreenOnDetails.class.getName(),
             Dashboard.class.getName(),
             WifiTetherClientManager.class.getName(),
+            SecurityHubDashboard.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

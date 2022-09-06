@@ -107,6 +107,7 @@ android_library {
         "xd.xdui-preference",
         "accountfeatureprovidergoogle",
         "SettingsLibMainSwitchPreference",
+        "google-securityhub",
     ],
 
     libs: [
@@ -138,6 +139,17 @@ android_app {
     optimize: {
         proguard_flags_files: ["proguard.flags"],
     },
+}
+
+android_library_import {
+    name: "google-securityhub",
+    aars: ["libs/google-securityhub.aar"],
+    sdk_version: "33",
+    static_libs: [
+        "androidx.preference_preference",
+        "com.google.android.material_material",
+        "guava",
+    ]
 }
 
 android_library_import {
