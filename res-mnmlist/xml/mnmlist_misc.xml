@@ -50,4 +50,18 @@
                     android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
           </Preference>
      </PreferenceCategory>
+
+     <!-- Reticker -->
+     <com.xd.mnmlist.preferences.SystemSettingSwitchPreference
+        android:key="reticker_status"
+        android:title="@string/reticker_title"
+        android:summary="@string/reticker_summary"
+        android:defaultValue="false" />
+
+    <com.xd.mnmlist.preferences.SystemSettingSwitchPreference
+        android:dependency="reticker_status"
+        android:key="reticker_colored"
+        android:title="@string/reticker_colored_title"
+        android:summary="@string/reticker_colored_summary"
+        android:defaultValue="false" />
 </PreferenceScreen>
