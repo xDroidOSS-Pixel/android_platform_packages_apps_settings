@@ -35,12 +35,11 @@
     <string name="lockscreen_title">Lock screen</string>
     <string name="lockscreen_summary">Always on display • Media Art • Charge info</string>
 
-    <!-- Gestures & Buttons category -->
-    <string name="gestures_category_title">Gestures</string>
-    <string name="buttons_category_title">Buttons</string>
-    
     <!-- mnmlist Summary -->
     <string name="show_mnmlist_summary_title">Mnmlist summary in dashboard</string>
     <string name="show_mnmlist_summary_summary">Show mnmlist summary preference in main dashboard</string>
 
+    <!-- Gestures & Buttons category -->
+    <string name="gestures_category_title">Gestures</string>
+    <string name="buttons_category_title">Buttons</string>
 </resources>
