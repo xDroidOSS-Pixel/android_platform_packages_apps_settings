@@ -44,27 +44,13 @@
             android:title="@string/interfaces_title"
             android:fragment="com.xd.mnmlist.fragments.Interfaces" />
 
-        <!-- Quick Settings -->
-        <Preference
-            android:key="quicksettings_category"
-            settings:layout="@layout/xd_dashboard_pref_mid"
-            android:title="@string/quicksettings_title" 
-            android:fragment="com.xd.mnmlist.fragments.QuickSettings"/>
-
-        <!-- Getures -->
+        <!-- Gestures & Buttons -->
         <Preference
             android:key="gestures_category"
             settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/gestures_title"
             android:fragment="com.android.settings.gestures.GestureSettings"/>
         
-        <!-- Buttons -->
-        <Preference
-            android:key="buttons_category"
-            settings:layout="@layout/xd_dashboard_pref_mid"
-            android:title="@string/buttons_title" 
-            android:fragment="com.xd.mnmlist.fragments.Buttons"/>
-
         <!-- Lockscreen -->
         <Preference
             android:key="lockscreen_category"
