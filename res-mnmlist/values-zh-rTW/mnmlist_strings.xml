@@ -21,8 +21,8 @@
     <string name="mnmlist_dashboard_title">什麼是 xdroid？</string>
     <string name="xd_tap_about">關於 xdroid</string>
     <string name="xd_tap_about_summary">點擊這裡了解更多關於xdroid的訊息</string>
-    <string name="gestures_title">手勢</string>
-    <string name="gestures_summary">雙擊手勢 • 系統導航</string>
+    <string name="gestures_title">手勢 &#38;  按鍵</string>
+    <string name="gestures_summary">雙擊手勢 • 系統導航 • 音量鍵喚醒 • 播放控制</string>
     <string name="misc_title">雜項</string>
     <string name="misc_summary">進階重啟 • 震動</string>
     <string name="interfaces_title">系統介面</string>
@@ -38,6 +38,9 @@
     <string name="lockscreen_summary">Always on display • 專輯封面 • 充電資訊</string>
     <string name="three_finger_gesture">滑動以擷取螢幕</string>
     <string name="three_finger_gesture_summary">三指下滑即可擷取螢幕畫面</string>
+    <!-- Gestures & Buttons category -->
+    <string name="gestures_category_title">手勢</string>
+    <string name="buttons_category_title"> 按鍵</string>
     <!-- Global Actions -->
     <string name="global_actions_advanced_reboot_title">啟用進階重啟</string>
     <string name="global_actions_advanced_reboot_summary">在電源選單中顯示 Recovery 和 Bootloader 選項</string>

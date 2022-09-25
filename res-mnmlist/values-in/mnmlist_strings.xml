@@ -21,8 +21,8 @@
     <string name="mnmlist_dashboard_title">Apa itu xdroid?</string>
     <string name="xd_tap_about">Tentang xdroid</string>
     <string name="xd_tap_about_summary">Ketuk di sini untuk mengetahui lebih lanjut tentang xdroid</string>
-    <string name="gestures_title">Gestur</string>
-    <string name="gestures_summary">Gestur ketuk dua kali • Navigasi sistem</string>
+    <string name="gestures_title">Gestur &#38; Tombol</string>
+    <string name="gestures_summary">Gestur ketuk dua kali • Navigasi sistem • Volume bangun • Kontrol pemutaran</string>
     <string name="misc_title">Lain-lain</string>
     <string name="misc_summary">Mulai ulang lanjutan • Haptik kembali</string>
     <string name="interfaces_title">Antarmuka sistem</string>
@@ -36,8 +36,14 @@
     <string name="quicksettings_summary">Penggeser Kecerahan • Kecerahan otomatis</string>
     <string name="lockscreen_title">Layar Kunci</string>
     <string name="lockscreen_summary">Layar selalu aktif • Seni Media • Info pengisian daya</string>
-    <string name="three_finger_gesture">Usap untuk menangkap layar</string>
-    <string name="three_finger_gesture_summary">Usap tiga jari ke bawah untuk menangkap layar</string>
+    <string name="three_finger_gesture">Gesek untuk menangkap layar</string>
+    <string name="three_finger_gesture_summary">Gesek tiga jari ke bawah untuk menangkap layar</string>
+    <!-- Gestures & Buttons category -->
+    <string name="gestures_category_title">Gestur</string>
+    <string name="buttons_category_title">Tombol</string>
+    <!-- mnmlist Summary -->
+    <string name="show_mnmlist_summary_title">Ringkasan mnmlist di dashboard</string>
+    <string name="show_mnmlist_summary_summary">Tampilkan ringkasan pengaturan mnmlist di dasbor utama</string>
     <!-- Global Actions -->
     <string name="global_actions_advanced_reboot_title">Aktifkan mulai ulang lanjutan</string>
     <string name="global_actions_advanced_reboot_summary">Tampilkan opsi untuk mode recovery dan bootloader di menu daya</string>

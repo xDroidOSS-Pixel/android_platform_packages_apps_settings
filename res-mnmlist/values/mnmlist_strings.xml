@@ -23,7 +23,7 @@
     <string name="mnmlist_dashboard_title">What is xdroid?</string>
     <string name="xd_tap_about">About xdroid</string>
     <string name="xd_tap_about_summary">Tap here to know more about xdroid</string>
-    <string name="gestures_title">Gestures & Buttons</string>
+    <string name="gestures_title">Gestures &#38; Buttons</string>
     <string name="gestures_summary">DT2W • DT2S • DT2P • Volume wake • Playback control</string>
     <string name="misc_title">Miscellaneous</string>
     <string name="misc_summary">Advance reboot • Back haptic</string>
@@ -34,5 +34,13 @@
     <string name="interfaces_battery_title">Battery</string>
     <string name="lockscreen_title">Lock screen</string>
     <string name="lockscreen_summary">Always on display • Media Art • Charge info</string>
+
+    <!-- Gestures & Buttons category -->
+    <string name="gestures_category_title">Gestures</string>
+    <string name="buttons_category_title">Buttons</string>
+    
+    <!-- mnmlist Summary -->
+    <string name="show_mnmlist_summary_title">Mnmlist summary in dashboard</string>
+    <string name="show_mnmlist_summary_summary">Show mnmlist summary preference in main dashboard</string>
 
 </resources>
