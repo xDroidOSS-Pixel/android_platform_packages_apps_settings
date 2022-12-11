@@ -35,7 +35,6 @@ public class SecuritySettingsFeatureProviderImpl implements SecuritySettingsFeat
 
     @Override
     public String getAlternativeAdvancedSettingsCategoryKey() {
-        return FeatureFactory.getAppContext().getString(
-                R.string.config_alternative_advanced_security_category_key);
+        return "com.google.android.settings.category.ia.advanced_security";
     }
 }

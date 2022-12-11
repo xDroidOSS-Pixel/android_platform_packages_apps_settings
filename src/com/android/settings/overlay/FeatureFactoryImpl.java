@@ -74,6 +74,7 @@ import com.android.settings.users.UserFeatureProviderImpl;
 import com.android.settings.wifi.WifiTrackerLibProvider;
 import com.android.settings.wifi.WifiTrackerLibProviderImpl;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
+import com.google.android.settings.security.SecurityHubDashboard;
 import com.google.android.settings.security.SecuritySettingsFeatureProviderGoogleImpl;
 
 /**
