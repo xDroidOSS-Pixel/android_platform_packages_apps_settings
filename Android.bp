@@ -108,6 +108,7 @@ android_library {
         "accountfeatureprovidergoogle",
         "SettingsLibMainSwitchPreference",
         "vendor.lineage.fastcharge-V1.0-java",
+        "SettingsGoogle-lib",
     ],
 
     libs: [
