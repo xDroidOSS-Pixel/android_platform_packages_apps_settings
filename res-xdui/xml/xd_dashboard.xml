@@ -85,7 +85,7 @@
         android:order="-75"
         android:title="@string/xd_dashboard_battery"
         settings:layout="@layout/xd_dashboard_pref_mid"
-        android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"/>
+        android:fragment="com.android.settings.fuelgauge.batteryusage.PowerUsageSummary"/>
 
     <Preference
         android:key="top_level_sound"
