@@ -29,4 +29,10 @@
         </Preference>
      </PreferenceCategory>
 
+     <Preference
+          android:key="network_traffic_state"
+          android:title="@string/network_traffic_title"
+          android:summary="@string/network_traffic_summary"
+          android:fragment="com.xd.mnmlist.fragments.NetworkTrafficSettings" />
+    
 </PreferenceScreen>
