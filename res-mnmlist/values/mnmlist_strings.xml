@@ -34,6 +34,7 @@
     <string name="interfaces_battery_title">Battery</string>
     <string name="lockscreen_title">Lock screen</string>
     <string name="lockscreen_summary">Always on display • Media Art • Charge info</string>
+    <string name="interfaces_gaming_mode">Preference Game</string>
 
     <!-- mnmlist Summary -->
     <string name="show_mnmlist_summary_title">Mnmlist summary in dashboard</string>

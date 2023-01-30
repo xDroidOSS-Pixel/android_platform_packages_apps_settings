@@ -38,6 +38,7 @@
     <string name="lockscreen_summary">Layar selalu aktif • Seni Media • Info pengisian daya</string>
     <string name="three_finger_gesture">Gesek untuk menangkap layar</string>
     <string name="three_finger_gesture_summary">Gesek tiga jari ke bawah untuk menangkap layar</string>
+    <string name="interfaces_gaming_mode">Preferensi Permainan</string>
     <!-- Gestures & Buttons category -->
     <string name="gestures_category_title">Gestur</string>
     <string name="buttons_category_title">Tombol</string>

@@ -30,4 +30,18 @@
           android:summary="@string/global_actions_advanced_reboot_summary"
           android:defaultValue="true" />
 
+     <!-- Game Space -->
+     <PreferenceCategory
+        android:title="@string/interfaces_gaming_mode">
+          <Preference
+               android:key="game_settings"
+               android:title="@string/game_space_title"
+               android:summary="@string/game_space_summary">
+
+               <intent 
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="io.chaldeaprjkt.gamespace"
+                    android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
+          </Preference>
+     </PreferenceCategory>
 </PreferenceScreen>
