@@ -284,4 +284,12 @@
     <string name="privacy">Privacy</string>
     <string name="ignore_window_secure_title">Ignore secure window flag</string>
     <string name="ignore_window_secure_summary">Remove screenshot and screenrecord limits for all apps. This can be convenient in some cases but may lead to privacy leaks.</string>
+
+    <!-- Lockscreen information -->
+    <string name="lockscreen_info_title">Lockscreen info</string>
+    <string name="dt2w_info_title">DT2W</string>
+    
+    <!-- Lockscreen battery info indicator -->
+    <string name="lockscreen_battery_info_title">Charging info</string>
+    <string name="lockscreen_battery_info_summary">Display charger max current, voltage and battery temperature while charging</string>
 </resources>
