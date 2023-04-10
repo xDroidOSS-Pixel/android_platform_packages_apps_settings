@@ -43,6 +43,12 @@
         android:key="battery_usage_summary"
         android:title="@string/advanced_battery_preference_title"
         settings:keywords="@string/keywords_battery_usage" />
+    
+    <com.xd.mnmlist.preferences.SecureSettingSwitchPreference
+        android:key="sys_adaptive_charging_enabled"
+        android:title="@string/sys_adaptive_charging_title"
+        android:summary="@string/sys_adaptive_charging_summary"
+        android:defaultValue="true" />
 
     <com.xd.mnmlist.preferences.SystemSettingSwitchPreference
         android:key="battery_24_hrs_stats"

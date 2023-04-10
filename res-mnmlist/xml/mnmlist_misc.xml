@@ -74,4 +74,14 @@
           android:summary="@string/ignore_window_secure_summary"
           android:defaultValue="false"/>
      </PreferenceCategory>
+
+     <!-- System Manager Services -->
+     <PreferenceCategory
+        android:title="@string/system_manager">    
+          <Preference
+               android:key="system_manager_settings"
+               android:title="@string/system_manager_services_title"
+               android:summary="@string/system_manager_services_summary"
+               android:fragment="com.xd.mnmlist.fragments.SystemManagerSettings"/>
+     </PreferenceCategory> 
 </PreferenceScreen>
