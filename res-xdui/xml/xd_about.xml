@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2021 xdroid, xyzprjkt
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/xd_about">
+
+    <!-- xd. About Header -->
+    <Preference
+        android:key="xd_about_header"
+        settings:layout="@layout/xd_about_header"
+        android:selectable="false"/>
+
+    <!-- xd. Desc -->
+    <Preference
+        android:key="xd_about_desc"
+        settings:layout="@layout/xd_about_desc"
+        android:selectable="false"/>
+
+    <!-- Core Team Category -->
+    <PreferenceCategory
+        android:key="xd_about_core_team"
+        android:title="@string/xd_about_core_team_cat">
+
+        <!-- xyzuan -->
+        <Preference
+            android:key="xd_about_xyzuan"
+            settings:layout="@layout/xd_about_core_pref"
+            android:icon="@drawable/xd_about_xyzuan"
+            android:title="@string/xd_about_core_xyzuan"
+            android:summary="@string/xd_about_core_xyzuan_role">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/xyzuan"/>
+
+        </Preference>
+
+        <!-- friction -->
+        <Preference
+            android:key="xd_about_friction"
+            android:icon="@drawable/xd_about_friction"
+            settings:layout="@layout/xd_about_core_pref"
+            android:title="@string/xd_about_core_friction"
+            android:summary="@string/xd_about_core_friction_role">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/gerobaksariroti"/>
+
+        </Preference>
+
+        <!-- Eky Zahahah -->
+        <Preference
+            android:key="xd_about_eky"
+            android:icon="@drawable/xd_about_eky"
+            settings:layout="@layout/xd_about_core_pref"
+            android:title="@string/xd_about_core_eky"
+            android:summary="@string/xd_about_core_eky_role">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/hahahahahhhhh10"/>
+
+        </Preference>
+
+        <!-- Waxaranai -->
+        <Preference
+            android:key="xd_about_waxaranai"
+            android:icon="@drawable/xd_about_waxaranai"
+            settings:layout="@layout/xd_about_core_pref"
+            android:title="@string/xd_about_core_waxaranai"
+            android:summary="@string/xd_about_core_waxaranai_role">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/Waxaranai"/>
+
+        </Preference>
+
+        <!-- basokuahenakrasanya -->
+        <Preference
+            android:key="xd_about_basokuahenakrasanya"
+            android:icon="@drawable/xd_about_basokuahenakrasanya"
+            settings:layout="@layout/xd_about_core_pref"
+            android:title="@string/xd_about_core_basokuahenakrasanya"
+            android:summary="@string/xd_about_core_basokuahenakrasanya_role">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/basokuahenakrasanya"/>
+
+        </Preference>
+
+    </PreferenceCategory>
+</PreferenceScreen>

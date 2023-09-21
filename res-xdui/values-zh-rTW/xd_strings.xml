@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2021 xdroid, xyzprjkt
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- xd. version -->
+    <string name="xd_revision">XD 版本</string>
+    <!-- AOSP Revision -->
+    <string name="aosp_revision">AOSP 版本</string>
+    <!-- xd. Placeholder -->
+    <string name="xd_title_placeholder">loremipsum</string>
+    <string name="xd_summary_placeholder">loremipsum</string>
+    <!-- xd. fake toolbar -->
+    <string name="xd_firmware_info">固件訊息</string>
+    <string name="xd_hardware_info">硬體資訊</string>
+    <string name="xd_about_phone">關於手機</string>
+    <string name="xd_about">關於 xdroid</string>
+    <!-- xd. Dashboard -->
+    <string name="xd_dashboard_greet_default">您在尋找什麼?</string>
+    <string name="xd_dashboard_greet1">您在尋找什麼?</string>
+    <string name="xd_dashboard_greet2">在找什麼嗎？</string>
+    <string name="xd_dashboard_greet3">需要改什麼嗎？</string>
+    <string name="xd_dashboard_greet4">找什麼呢？</string>
+    <string name="xd_dashboard_greet5">需要什麼幫助嗎？</string>
+    <string name="xd_dashboard_greet6">讓我們做一些很酷的事情</string>
+    <string name="xd_dashboard_greet7">有什麼要改的？</string>
+    <string name="xd_dashboard_greet8">向大家打個招呼嗎？</string>
+    <string name="xd_dashboard_greet9">Hi, 歡迎使用mnmlist</string>
+    <string name="xd_dashboard_greet10">在這裡自定義您的設備！</string>
+    <string name="xd_dashboard_greet11">想找點什麼呢？</string>
+    <string name="xd_dashboard_greet12">嘿, 正在使用xdroid中</string>
+    <string name="xd_dashboard_device">關於手機</string>
+    <string name="xd_dashboard_account">帳戶</string>
+    <string name="xd_dashboard_network">網際網路</string>
+    <string name="xd_dashboard_conectivity">連接</string>
+    <string name="xd_dashboard_display">顯示</string>
+    <string name="xd_dashboard_battery">電池</string>
+    <string name="xd_dashboard_sound">音效</string>
+    <string name="xd_dashboard_apps">應用程式</string>
+    <string name="xd_dashboard_notif">通知</string>
+    <string name="xd_dashboard_storage">儲存空間</string>
+    <string name="xd_dashboard_privacy">隱私權</string>
+    <string name="xd_dashboard_location">定位</string>
+    <string name="xd_dashboard_security">安全性</string>
+    <string name="xd_dashboard_accessibility">無障礙設定</string>
+    <string name="xd_dashboard_system">其它</string>
+    <string name="xd_dashboard_support">支援</string>
+    <!-- xd. mnmlist. -->
+    <string name="xd_dashboard_xzrypr">Mnmlist</string>
+    <string name="xd_dashboard_xzrypr_summary">在這裡定制你的設備</string>
+    <!-- xd. Preferences -->
+    <string name="xd_firmware_info_summary">此手機中的固件信息</string>
+    <string name="xd_hardware_info_summary">此手機中的固件信息</string>
+    <string name="xd_device_owner">所有者姓名</string>
+    <string name="xd_legal_information_summary">許可法律信息</string>
+    <string name="xd_regulatory_summary">法規資訊</string>
+    <string name="xd_wifi_saved">已儲存的網路</string>
+    <string name="blurs_effect">模糊效果</string>
+    <string name="dark_ui_mode_summary">在此設備中啟用深色主題</string>
+    <string name="xd_updater">系統更新</string>
+    <string name="xd_updater_summary">點擊此處查看最新固件更新</string>
+    <!-- xd. Preferences Category -->
+    <string name="xd_about_phone_owner_cat">顯示擁有者資訊</string>
+    <string name="xd_about_phone_information_cat">裝置資訊</string>
+    <string name="xd_about_phone_legalregulator_cat">法律和監管信息</string>
+    <string name="xd_about_phone_network_cat">網路資訊</string>
+    <string name="xd_firmware_version_cat">固件版本</string>
+    <string name="xd_firmware_security_cat">固件安全</string>
+    <string name="xd_general_cat">通用</string>
+    <string name="xd_category_ui">使用者介面</string>
+    <string name="xd_category_screen">螢幕</string>
+    <string name="xd_category_density">密度</string>
+    <string name="xd_category_gesture">螢幕手勢</string>
+    <string name="xd_category_brightness">亮度</string>
+    <string name="xd_about_core_team_cat">核心開發者</string>
+    <string name="xd_about_contributor_cat">貢獻者</string>
+    <!-- xd. About -->
+    <string name="xd_about_desc">xdroid 是一款基於 AOSP 的定制 Android ROM，在保持 AOSP 提供的流暢性和優化的同時，注重簡單和極簡主義。</string>
+    <string name="xd_about_core_xyzuan">Jody Yuantoro</string>
+    <string name="xd_about_core_xyzuan_role">創始人、首席開發人員和 UI 設計師</string>
+    <string name="xd_about_core_friction">Firman Yanuar</string>
+    <string name="xd_about_core_friction_role">UI 和 UX 設計師</string>
+    <string name="xd_about_core_eky">Eky Zakariah</string>
+    <string name="xd_about_core_eky_role">前端開發者</string>
+    <string name="xd_about_contributor_rdclxvi">Royan AK</string>
+    <string name="xd_about_contributor_rdclxvi_role">印度尼西亚翻译者</string>
+    <string name="xd_about_contributor_iszon">Iszon</string>
+    <string name="xd_about_contributor_iszon_role">波兰语翻译者</string>
+    <string name="xd_about_contributor_vi">log1cs</string>
+    <string name="xd_about_contributor_vi_summary">越南语翻译者</string>
+    <!-- xd. About Phone -->
+    <string name="xd_device_name">裝置名稱</string>
+    <string name="xd_chipset_type">芯片</string>
+    <string name="xd_gpu">圖形處理器</string>
+    <string name="xd_camera_mp">相機</string>
+    <string name="xd_screen_type">螢幕</string>
+    <!-- xd. Build Status -->
+    <string name="xd_build_status">您的設備不受官方支持！</string>
+    <string name="xd_build_maintained_summary">維護者%s</string>
+    <string name="xd_build_unmaintained_summary">此版本未維護</string>
+    <!-- SELinux Status -->
+    <string name="selinux_status">SELinux 狀態</string>
+    <string name="selinux_status_disabled">禁用</string>
+    <string name="selinux_status_permissive">許可</string>
+    <string name="selinux_status_enforcing">強制執行</string>
+    <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">指紋感應器位於平板正面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">指紋感測器位於裝置正面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">指紋感應器位於手機正面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">指紋感應器位於平板正面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">指紋感應器位於裝置背面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">指紋感應器位於手機背面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">指紋感應器位於平板電腦側面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">指紋感應器位於裝置側面。</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">指紋感測器位於手機側面。</string>
+    <!-- Message shown when user touches the icon on the screen, instead of the real fingerprint sensor -->
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">輕觸位於平板正面的感應器。</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">輕觸位於裝置正面的感應器。</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">輕觸位於手機正面的感應器。</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">輕觸位於平板背面的感應器。</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">輕觸位於裝置後方的指紋感應器</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">輕觸位於手機背面的感應器。</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">輕觸位於平板側面的感應器。</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">輕觸位於裝置側面的指紋感應器</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">輕觸位於手機側面的感應器。</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">同步鈴聲 &amp; 與通知音量</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">清除電池使用數據？</string>
+    <string name="battery_stats_message">電池使用數據將被清除</string>
+    <string name="battery_stats_clear">@string/proxy_clear_text</string>
+    <!-- Default getTimeSpentInApp string for Wellbeing to display. [CHAR LIMIT=NONE] -->
+    <string name="duration_less_than_one_minute">少於一分鐘</string>
+    <!-- Summary for Wellbeing screen time usage. [CHAR LIMIT=NONE] -->
+    <string name="screen_time_summary_usage_today">今天使用 %1$s</string>
+    <!-- Game -->
+    <string name="game_dashboard_always_on_summary">在遊戲中顯示遊戲控制台的按鈕</string>
+    <string name="game_dashboard_always_on_title">遊戲控制台</string>
+    <string name="game_dashboard_dnd_rule_name">遊戲</string>
+    <string name="game_dashboard_dnd_summary">在遊玩遊戲時只接收來自重要聯絡人和應用程式的通知</string>
+    <string name="game_dashboard_dnd_title">遊玩遊戲時開啟零打擾</string>
+    <!-- Columbus -->
+    <string name="columbus_title">@string/columbus_name</string>
+    <string name="columbus_gesture_detected">偵測到快速輕觸手勢！</string>
+    <string name="columbus_gesture_enrollment_complete">已完成</string>
+    <string name="columbus_gesture_enrollment_do_it_later">暫時不需要</string>
+    <string name="columbus_gesture_enrollment_settings">前往設定</string>
+    <string name="columbus_gesture_enrollment_try_it">試一下</string>
+    <string name="columbus_gesture_training_action_no_selection_error">選擇要執行的動作</string>
+    <string name="columbus_gesture_training_action_text">選擇使用快速輕觸時要執行的動作。這項設定稍後仍可更改。</string>
+    <string name="columbus_gesture_training_action_title">選擇快速輕觸選項</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… 檢測到 2 個中的 1 個輕觸手勢</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">再試一次，快速的輕觸手機背面兩下</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">好棒棒！</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">... 偵測到第二次輕觸手勢</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">快速輕觸已準備完成且能開始使用</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">恭喜！</string>
+    <string name="columbus_gesture_training_enrolling_text">快速的輕觸手機背面兩下</string>
+    <string name="columbus_gesture_training_enrolling_title">試試快速輕觸</string>
+    <string name="columbus_gesture_training_finished_text">前往設定調整觸發快速輕觸的力道強度</string>
+    <string name="columbus_gesture_training_finished_title">您已完成快速輕觸的設定</string>
+    <string name="columbus_gesture_training_intro_text_accidental">您剛剛成功觸發了快速輕觸手勢。透過輕觸手機背面兩下可以開啟數位助理或是其他動作，您可以在設定中自訂想要使用的功能。</string>
+    <string name="columbus_gesture_training_intro_text_suw">螢幕截圖、顯示通知或是其他動作，只要輕觸兩下便能完成。</string>
+    <string name="columbus_gesture_training_intro_title">快速輕觸執行動作</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">請選擇要開啟的應用程式</string>
+    <string name="columbus_gesture_training_launch_text">選擇在輕觸兩下時要開啟的應用程式</string>
+    <string name="columbus_gesture_training_launch_title">選擇要開啟的應用程式</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s 設定捷徑</string>
+    <string name="columbus_launch_settings_activity_title">快速輕觸設定</string>
+    <string name="columbus_name">快速輕觸</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">%1$s 設定</string>
+    <string name="columbus_setting_action_assistant_title">使用您的數位助理</string>
+    <string name="columbus_setting_action_assistant_value">助理</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">尚未選擇應用程式</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">未安裝應用程式</string>
+    <string name="columbus_setting_action_launch_title">開啟應用程式</string>
+    <string name="columbus_setting_action_launch_value">開啟</string>
+    <string name="columbus_setting_action_notification_title">顯示通知</string>
+    <string name="columbus_setting_action_notification_value">通知</string>
+    <string name="columbus_setting_action_open_app_title">開啟App</string>
+    <string name="columbus_setting_action_overview_title">查看近期使用的應用程式</string>
+    <string name="columbus_setting_action_overview_value">概覽</string>
+    <string name="columbus_setting_action_play_pause_title">播放或暫停媒體</string>
+    <string name="columbus_setting_action_play_pause_value">媒體</string>
+    <string name="columbus_setting_action_screenshot_title">拍攝螢幕快照</string>
+    <string name="columbus_setting_action_screenshot_value">螢幕截圖</string>
+    <string name="columbus_setting_actions_title">輕觸兩下手機背面來</string>
+    <string name="columbus_setting_additional_settings_title">輕觸力道強度</string>
+    <string name="columbus_setting_app_selection_help_text">選擇在輕觸背面時要開啟的應用程式。如果您解除安裝該應用程式，快速輕觸將會暫時停用直至您選擇其他應用程式。</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">選擇在輕觸開啟這個應用程式後要執行的動作</string>
+    <string name="columbus_setting_enable_switch_title">使用快速輕觸</string>
+    <string name="columbus_setting_sensitivity_title">需要加強力道</string>
+    <string name="columbus_summary">%1$s / %2$s</string>
+</resources>

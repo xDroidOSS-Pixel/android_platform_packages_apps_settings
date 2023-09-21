@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2022 xdroidOSS, xyzprjkt
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginHorizontal="@dimen/xd_pref_card_horizontal_padding"
+    android:background="@drawable/xd_pref_card_sin"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:gravity="center_vertical"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:clipToPadding="false"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingStart="-8dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/xd_about_phone_header_device"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/xd_device_name"
+                style="@style/xd_text_primary"/>
+            
+            <TextView
+                android:id="@+id/xd_about_phone_header_device_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/xd_device_name_summary"
+                android:singleLine="true"
+                android:layout_below="@id/xd_about_phone_header_device"
+                android:layout_alignStart="@id/xd_about_phone_header_device"
+                style="@style/xd_text_secondary"/>
+        
+            <TextView
+                android:id="@+id/xd_about_phone_header_chipset"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/xd_chipset_type"
+                android:layout_below="@id/xd_about_phone_header_device_desc"
+                android:layout_alignStart="@id/xd_about_phone_header_device_desc"
+                style="@style/xd_text_primary"/>
+        
+            <TextView
+                android:id="@+id/xd_about_phone_header_chipset_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/xd_chipset_type_summary"
+                android:singleLine="true"
+                android:layout_below="@id/xd_about_phone_header_chipset"
+                android:layout_alignStart="@id/xd_about_phone_header_chipset"
+                style="@style/xd_text_secondary"/>
+        
+            <TextView
+                android:id="@+id/xd_about_phone_header_gpu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/xd_gpu"
+                android:layout_below="@id/xd_about_phone_header_chipset_desc"
+                android:layout_alignStart="@id/xd_about_phone_header_chipset_desc"
+                style="@style/xd_text_primary"/>
+        
+            <TextView
+                android:id="@+id/xd_about_phone_header_gpu_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/xd_gpu_summary"
+                android:singleLine="true"
+                android:layout_below="@id/xd_about_phone_header_gpu"
+                android:layout_alignStart="@id/xd_about_phone_header_gpu"
+                style="@style/xd_text_secondary"/>
+        
+            <TextView
+                android:id="@+id/xd_about_phone_header_camera"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/xd_camera_mp"
+                android:layout_below="@id/xd_about_phone_header_gpu_desc"
+                android:layout_alignStart="@id/xd_about_phone_header_gpu_desc"
+                style="@style/xd_text_primary"/>
+        
+            <TextView
+                android:id="@+id/xd_about_phone_header_camera_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/xd_camera_mp_summary"
+                android:singleLine="true"
+                android:layout_below="@id/xd_about_phone_header_camera"
+                android:layout_alignStart="@id/xd_about_phone_header_camera"
+                style="@style/xd_text_secondary"/>
+        
+            <TextView
+                android:id="@+id/xd_about_phone_header_screen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/xd_screen_type"
+                android:layout_below="@id/xd_about_phone_header_camera_desc"
+                android:layout_alignStart="@id/xd_about_phone_header_camera_desc"
+                style="@style/xd_text_primary"/>
+        
+            <TextView
+                android:id="@+id/xd_about_phone_header_screen_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/xd_screen_type_summary"
+                android:singleLine="true"
+                android:layout_below="@id/xd_about_phone_header_screen"
+                android:layout_alignStart="@id/xd_about_phone_header_screen"
+                style="@style/xd_text_secondary"/>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/xd_about_phone_header_illustration"
+            android:layout_width="@dimen/xd_about_phone_ill_width"
+            android:layout_height="@dimen/xd_about_phone_ill_height"
+            android:layout_marginEnd="6dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="18dp">
+
+            <com.xdroidui.preferences.xdCardPrefWall
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:elevation="0dp"
+                android:gravity="center"
+                android:orientation="vertical" />
+                
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/xd_clock_bg"
+                android:alpha="0.7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="-12dp"
+                    android:format12Hour="hh"
+                    android:format24Hour="kk"
+                    style="@style/xd_clock"/>
+                        
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="-12dp"
+                    android:format12Hour="mm"
+                    android:format24Hour="mm"
+                    style="@style/xd_clock"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

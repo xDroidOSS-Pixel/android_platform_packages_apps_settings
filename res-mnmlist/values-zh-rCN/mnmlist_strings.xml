@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+     Copyright (C) 2022 xdroid & xyzprjkt
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Dashboard -->
+    <string name="mnmlist_title">mnmlist</string>
+    <string name="mnmlist_dashboard_title">什么是 xdroid？</string>
+    <string name="xd_tap_about">关于 xdroid</string>
+    <string name="xd_tap_about_summary">点击这里了解更多关于xdroid的信息</string>
+    <string name="gestures_title">手势</string>
+    <string name="gestures_summary">双击手势• 系统导航</string>
+    <string name="misc_title">杂项</string>
+    <string name="misc_summary">高级重启 • 震动</string>
+    <string name="interfaces_title">系统界面</string>
+    <string name="interfaces_summary"> 时钟• 电池• 图标 • 网络流量</string>
+    <string name="interfaces_style_title">系统样式</string>
+    <string name="interfaces_statusbar_title">状态栏</string>
+    <string name="interfaces_battery_title">电量</string>
+    <string name="buttons_title">按键</string>
+    <string name="buttons_summary">音量键唤醒 • 播放控制</string>
+    <string name="quicksettings_title">控制中心</string>
+    <string name="quicksettings_summary">亮度滑块 • 自动亮度</string>
+    <string name="lockscreen_title">锁屏</string>
+    <string name="lockscreen_summary">息屏显示 • 媒体封面 • 充电信息</string>
+    <string name="three_finger_gesture">滑动截屏</string>
+    <string name="three_finger_gesture_summary">三指同时下滑来截图</string>
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">启用高级重启</string>
+    <string name="global_actions_advanced_reboot_summary">在电源菜单中显示恢复模式和引导模式选项</string>
+    <!-- Double Tap to Sleep Statusbar -->
+    <string name="double_tap_sleep_gesture_title">双击状态栏关闭屏幕</string>
+    <string name="double_tap_sleep_gesture_summary">双击状态栏的任何位置来使屏幕休眠</string>
+    <!-- Double Tap to Sleep Lockscreen -->
+    <string name="double_tap_sleep_lockscreen_title">双击锁屏界面休眠</string>
+    <string name="double_tap_sleep_lockscreen_summary">双击锁屏界面的任意位置休眠</string>
+    <!-- Statusbar Tuner -->
+    <string name="statusbar_items_title">状态栏图标</string>
+    <string name="statusbar_items_summary">启用/禁用状态栏图标</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_button_music_control_title">播放控制</string>
+    <string name="volume_button_music_control_summary">当屏幕关闭时，长按音量键来切换不同曲目</string>
+    <!-- Customization Categories/Fragment Titles -->
+    <string name="clocksettings_title">时间设置</string>
+    <string name="clocksettings_summary">状态栏时间设置</string>
+    <string name="status_bar_clock_date_title">时间和日期</string>
+    <string name="status_bar_clock_date_summary">自定义你的状态栏时间</string>
+    <string name="status_bar_clock_title">时间设置</string>
+    <string name="status_bar_clock_show">显示时间和日期</string>
+    <string name="status_bar_clock_style_title">时间样式</string>
+    <string name="status_bar_clock_style_right">右侧</string>
+    <string name="status_bar_clock_style_center">居中</string>
+    <string name="status_bar_clock_style_left">左侧</string>
+    <string name="status_bar_date_title">日期设置</string>
+    <string name="status_bar_am_pm_title">上午 / 下午样式</string>
+    <string name="status_bar_am_pm_info">24 小时制已启用</string>
+    <string name="status_bar_am_pm_normal">中等</string>
+    <string name="status_bar_am_pm_small">小</string>
+    <string name="status_bar_am_pm_hidden">隐藏(默认)</string>
+    <string name="clock_seconds_display">显示秒</string>
+    <string name="clock_date_display">日期</string>
+    <string name="clock_date_display_summary">在时间前显示自定义日期</string>
+    <string name="clock_date_display_none">隐藏</string>
+    <string name="clock_date_display_small">小号字体</string>
+    <string name="clock_date_display_normal">正常字体</string>
+    <string name="clock_date_style">日期样式</string>
+    <string name="clock_date_style_normal">正常</string>
+    <string name="clock_date_style_lowercase">小写</string>
+    <string name="clock_date_style_uppercase">大写</string>
+    <string name="clock_date_format_custom">自定义 java 时间格式</string>
+    <string name="clock_date_format">日期格式</string>
+    <string name="clock_date_string_edittext_title">必须是日期格式，例如 MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">输入字符串</string>
+    <string name="clock_date_right">位于时间右侧</string>
+    <string name="clock_date_left">位于时间左侧</string>
+    <string name="clock_date_position">日期位置</string>
+    <string name="status_bar_clock_auto_hide_title">自动隐藏时间</string>
+    <string name="status_bar_clock_auto_hide_summary">定期隐藏和显示时钟以节省状态栏空间</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">隐藏持续时间</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">显示持续时间</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">关闭屏幕时开启手电筒</string>
+    <string name="torch_power_button_gesture_none">禁用</string>
+    <string name="torch_power_button_gesture_dt">双击电源按钮 (较慢的单击响应)，禁用双击启动相机</string>
+    <string name="torch_power_button_gesture_lp">长按电源键</string>
+    <!-- Monet Engine -->
+    <string name="monet_category">Monet</string>
+    <string name="monet_engine_title">Monet 引擎</string>
+    <string name="monet_engine_summary">自定义 Monet 参数</string>
+    <string name="monet_engine_custom_color_title">使用自定义颜色</string>
+    <string name="monet_engine_custom_color_summary">使用自定义颜色而非根据壁纸的颜色</string>
+    <string name="monet_engine_color_override_title">自定义颜色</string>
+    <string name="monet_engine_white_luminance_user_title">白亮度</string>
+    <string name="monet_engine_accurate_shades_title">使用精确色彩</string>
+    <string name="monet_engine_chroma_factor_title">色彩浓度</string>
+    <string name="monet_engine_linear_lightness_title">使用线性亮度</string>
+    <string name="use_wallpaper_color_title">使用壁纸颜色</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G 图标</string>
+    <string name="show_fourg_icon_summary">在信号图标上显示 4G 以替代 LTE</string>
+    <!-- Battery Styles -->
+    <string name="battery_style_category_title">电池自定义</string>
+    <string name="battery_percent_title">电量百分比</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">电池样式</string>
+    <string name="status_bar_battery_style_icon_portrait">竖置图标 (默认)</string>
+    <string name="status_bar_battery_style_circle">环形</string>
+    <string name="status_bar_battery_style_dotted_circle">环形 (虚线)</string>
+    <string name="status_bar_battery_style_filled_circle">圆圈 (实心)</string>
+    <string name="status_bar_battery_style_text">文本</string>
+    <string name="status_bar_battery_style_hidden">隐藏</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">电量百分比</string>
+    <string name="status_bar_battery_percentage_default">隐藏 (默认)</string>
+    <string name="status_bar_battery_percentage_text_inside">在图标内</string>
+    <string name="status_bar_battery_percentage_text_next">在图标旁</string>
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">音量键唤醒</string>
+    <string name="volume_rocker_wake_summary">按下音量键唤醒您的设备</string>
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">Double tap</string>
+    <string name="doze_double_tap_title">Double tap to check phone</string>
+    <string name="doze_double_tap_summary">Pulse notifications by a double tap</string>
+    <!-- Brightness slider -->
+    <string name="qs_show_brightness_title">亮度滑块</string>
+    <string name="qs_show_brightness_summary">亮度滑块可见性和设置</string>
+    <string name="qs_brightness_position_bottom_title">底部亮度滑块</string>
+    <string name="qs_brightness_position_bottom_summary">在快捷开关面板底部显示亮度滑块</string>
+    <string name="qs_show_auto_brightness_title">自动亮度图标</string>
+    <string name="qs_show_auto_brightness_summary">在亮度滑块附近显示自动亮度开关</string>
+    <!-- Volume swap buttons -->
+    <string name="swap_volume_buttons_title">重新调整</string>
+    <string name="swap_volume_buttons_summary">旋转屏幕时交换音量键的布局</string>
+    <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">触控反馈</string>
+    <string name="back_gesture_haptic_summary">启用返回手势的振动效果</string>
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">充电时始终开启</string>
+    <string name="doze_on_charge_summary">充电时总是显示 Doze 界面</string>
+    <!-- General strings -->
+    <string name="default_string">默认</string>
+    <string name="unit_seconds">秒</string>
+    <!-- Lockscreen media art -->
+    <string name="lockscreen_media_art_category_title">专辑封面</string>
+    <string name="keygaurd_media_art_title">显示专辑封面</string>
+    <string name="keygaurd_media_art_summary">显示专辑封面作为锁屏背景</string>
+    <string name="lockscreen_media_blur_title">专辑封面模糊程度</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">锁屏界面充电信息</string>
+    <string name="lockscreen_battery_info_summary">充电时在锁屏界面显示电源的最大电流、电压以及电池温度</string>
+    <!-- Statusbar net monitor -->
+    <string name="statusbar_ntraffic">网络</string>
+    <string name="network_traffic_state_title">网速</string>
+    <string name="network_traffic_state_summary">在状态栏显示网速</string>
+    <string name="network_traffic_location_title">位置</string>
+    <string name="network_traffic_statusbar">状态栏</string>
+    <string name="network_traffic_qs_header">快速设置面板顶部</string>
+    <string name="network_traffic_mode_title">显示模式</string>
+    <string name="network_traffic_dynamic">动态</string>
+    <string name="network_traffic_download">下载</string>
+    <string name="network_traffic_upload">上传</string>
+    <string name="network_traffic_autohide_threshold_title">自动隐藏阈值 (Kb/s)</string>
+    <string name="network_traffic_refresh_interval_title">刷新间隔</string>
+    <!-- Brightness control -->
+    <string name="status_bar_toggle_brightness">亮度控制</string>
+    <string name="status_bar_toggle_brightness_summary">通过在状态栏上滑动来调整亮度</string>
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons">合并信号图标</string>
+    <string name="combined_status_bar_signal_icons_summary">在状态栏启用合并信号图标 (需要重启系统界面)</string>
+    <!-- Scramble pin -->
+    <string name="unlock_scramble_pin_layout_title">乱序布局</string>
+    <string name="unlock_scramble_pin_layout_summary">当解锁设备时使用乱序 PIN 布局</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">快速解锁</string>
+    <string name="unlock_quick_unlock_control_summary">当输入正确的 PIN 码/密码后自动解锁</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">重置统计数据</string>
+    <string name="battery_stats_message">电池的历史统计数据将会被重置</string>
+    <!-- Android debugging as root -->
+    <string name="adb_enable_root">Root用户调试</string>
+    <string name="adb_enable_summary_root">允许以 root 身份运行 Android 调试</string>
+    <!-- Fullscreen gestures -->
+    <string name="other_controls_title">其他设置</string>
+    <string name="fullscreen_gestures_title">全面屏手势</string>
+    <string name="fullscreen_gestures_summary">隐藏导航栏填充和键盘空间</string>
+    <!-- Gesture navbar length -->
+    <string name="gesture_navbar_length_title">导航栏长度</string>
+    <string name="short_label">短</string>
+    <string name="long_label">长</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">波纹效果</string>
+    <string name="enable_fingerprint_ripple_effect_summary">使用指纹解锁时显示波纹效果</string>
+    <!-- Hotspot VPN -->
+    <string name="tethering_allow_vpn_upstreams_title">允许客户端使用 VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">允许热点客户端使用此设备\u2019的 VPN 连接到上游连接</string>
+    <!-- Strings for per-app volume -->
+    <string name="app_volume">应用独立音量</string>
+    <string name="app_volume_title">每个应用的音量单独控制</string>
+    <string name="app_volume_summary">在音量条中显示每个应用的音量</string>
+    <!-- Navbar options -->
+    <string name="navbar_invert_layout_title">反转导航栏布局</string>
+    <!-- QS Tile requires unlocking before being accessible -->
+    <string name="qstile_requires_unlocking_title">使用控制中心的磁贴需要解锁</string>
+    <string name="qstile_requires_unlocking_summary">下面的磁贴需要解锁才能从锁屏界面使用它们：\n飞行模式, 移动数据, 蓝牙, 省流模式, 省电模式, 工作模式, 自动旋转, NFC, 热点, USB 网络共享和位置</string>
+    <!-- Disable QS -->
+    <string name="disable_qs_title">锁屏隐藏控制中心</string>
+    <string name="disable_qs_summary">如果设备被锁定，则隐藏控制中心，但不隐藏通知区域</string>
+    <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">锁屏时禁用电源菜单</string>
+    <string name="lockscreen_power_menu_disabled_summary">这个选项将会仅在安全锁屏下禁用电源菜单</string>
+    <!-- Volume panel on left switch -->
+    <string name="volume_panel_on_left_title">音量面板居左</string>
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">强制全屏显示的应用程序</string>
+    <string name="display_cutout_force_fullscreen_summary">强制应用忽略刘海区域</string>
+    <!-- Floating rotation button -->
+    <string name="enable_floating_rotation_button_title">使用浮动旋转按钮</string>
+    <!-- One shot automatic brightness -->
+    <string name="auto_brightness_one_shot_title">一键自动亮度</string>
+    <string name="auto_brightness_one_shot_summary">亮度调整仅在屏幕打开的那一刻进行</string>
+    <string name="search">搜索</string>
+    <string name="search_apps">搜索应用程序</string>
+    <!-- Privacy Indicator -->
+    <string name="mic_camera_privacy_indicator_title">麦克风和相机隐私指示器</string>
+    <string name="mic_camera_privacy_indicator_summary">当任何应用使用麦克风或相机时显示单独的指示器</string>
+    <string name="location_privacy_indicator_title">位置指示器</string>
+    <string name="location_privacy_indicator_summary_on">在隐私指示器中显示位置图标</string>
+    <string name="location_privacy_indicator_summary_off">在状态栏中显示位置图标</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">漫游标志</string>
+    <string name="roaming_indicator_icon_summary">漫游时在信号图标处显示漫游标志</string>
+    <!-- Game Space -->
+    <string name="game_space_title">游戏空间</string>
+    <string name="game_space_summary">增强您的游戏体验</string>
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">忽略窗口安全标志</string>
+    <string name="ignore_window_secure_summary">这将删除所有应用程序的截图和录屏限制。 通常，特殊应用程序会把截图或录屏中的内容变黑。 在某些情况下这可能很方便，但可能会导致隐私泄露。 更改此切换后，您可能需要重新启动</string>
+    <!-- Application downgrade -->
+    <string name="app_downgrade_title">允许应用程序降级</string>
+    <string name="app_downgrade_summary">这允许您降级应用程序。 请注意，这可能会导致崩溃和数据损坏</string>
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">口袋检测</string>
+    <string name="pocket_judge_summary">当设备在口袋中时屏蔽屏幕和按键操作</string>
+    <!-- QS battery estimates -->
+    <string name="qs_show_battery_estimate_title">Battery estimates</string>
+    <string name="qs_show_battery_estimate_summary_on">在快速设置中隐藏电池估计值</string>
+    <string name="qs_show_battery_estimate_summary_off">在快速设置中隐藏电池估计值</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">在游戏中解锁更高的 FPS</string>
+    <string name="use_games_spoof_summary">将您的设备伪装成特定游戏的不同型号以解锁更高的 FPS</string>
+    <!-- Unlimited google photos storage -->
+    <string name="use_photos_spoof_title">无限照片存储</string>
+    <string name="use_photos_spoof_summary">将您的设备伪装成 Pixel XL for Google Photos 应用，仅提供无限存储空间进行备份</string>
+</resources>

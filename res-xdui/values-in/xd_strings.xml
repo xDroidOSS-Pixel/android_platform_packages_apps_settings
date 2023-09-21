@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2021 xdroid, xyzprjkt
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- xd. version -->
+    <string name="xd_revision">Revisi XD</string>
+    <!-- AOSP Revision -->
+    <string name="aosp_revision">Revisi AOSP</string>
+    <!-- xd. Placeholder -->
+    <string name="xd_title_placeholder">loremipsum</string>
+    <string name="xd_summary_placeholder">loremipsum</string>
+    <!-- xd. fake toolbar -->
+    <string name="xd_firmware_info">Informasi firmware</string>
+    <string name="xd_hardware_info">Informasi hardware</string>
+    <string name="xd_about_phone">Tentang ponsel</string>
+    <string name="xd_about">Tentang xdroid</string>
+    <!-- xd. Dashboard -->
+    <string name="xd_dashboard_greet_default">Apa yang sedang Anda cari?</string>
+    <string name="xd_dashboard_greet1">Apa yang sedang Anda cari?</string>
+    <string name="xd_dashboard_greet2">Mencari sesuatu?</string>
+    <string name="xd_dashboard_greet3">Perlu mengubah sesuatu?</string>
+    <string name="xd_dashboard_greet4">Mencari sesuatu?</string>
+    <string name="xd_dashboard_greet5">Butuh sesuatu?</string>
+    <string name="xd_dashboard_greet6">Ayo lakukan sesuatu yang keren</string>
+    <string name="xd_dashboard_greet7">Madosi nopo nggeh?</string>
+    <string name="xd_dashboard_greet8">Naon anu anjeun milarian sobat?</string>
+    <string name="xd_dashboard_greet9">He rek! badhe madosi nopo?</string>
+    <string name="xd_dashboard_greet10">Halo! Sugeng rawuh ing xdroid</string>
+    <string name="xd_dashboard_greet11">Apo yang ang cari?</string>
+    <string name="xd_dashboard_greet12">Wilujeng sumping ka xdroid</string>
+    <string name="xd_dashboard_device">Tentang ponsel</string>
+    <string name="xd_dashboard_account">Akun</string>
+    <string name="xd_dashboard_account_summary">Atur semua profil user yang tersedia di perangkat ini disini</string>
+    <string name="xd_dashboard_network">Konektivitas</string>
+    <string name="xd_dashboard_portable_hotspot">Hotspot portabel</string>
+    <string name="xd_dashboard_conectivity">Perangkat</string>
+    <string name="xd_dashboard_display">Tampilan</string>
+    <string name="xd_dashboard_battery">Baterai</string>
+    <string name="xd_dashboard_sound">Suara</string>
+    <string name="xd_dashboard_apps">Aplikasi</string>
+    <string name="xd_dashboard_notif">Notifikasi</string>
+    <string name="xd_dashboard_storage">Penyimpanan</string>
+    <string name="xd_dashboard_privacy">Privasi</string>
+    <string name="xd_dashboard_location">Lokasi</string>
+    <string name="xd_dashboard_security">Keamanan</string>
+    <string name="xd_dashboard_accessibility">Aksesibilitas</string>
+    <string name="xd_dashboard_system">Lainnya</string>
+    <string name="xd_dashboard_wellbeing">Kesehatan Digital</string>
+    <string name="xd_dashboard_support">Dukungan</string>
+    <!-- xd. mnmlist. -->
+    <string name="xd_dashboard_xzrypr">Mnmlist</string>
+    <string name="xd_dashboard_xzrypr_summary">Dapatkan kustomisasi favorit Anda di sini</string>
+    <!-- xd. Preferences -->
+    <string name="xd_firmware_info_summary">Informasi tentang firmware di ponsel ini</string>
+    <string name="xd_hardware_info_summary">Informasi tentang hardware di ponsel ini</string>
+    <string name="xd_device_owner">Nama pemilik</string>
+    <string name="xd_legal_information_summary">Informasi hukum lisensi</string>
+    <string name="xd_regulatory_summary">Informasi regulasi</string>
+    <string name="xd_wifi_saved">Jaringan tersimpan</string>
+    <string name="blurs_effect">Efek blur</string>
+    <string name="dark_ui_mode_summary">Aktifkan Tema Gelap di perangkat ini</string>
+    <string name="xd_updater">Pembaruan sistem</string>
+    <string name="xd_updater_summary">Ketuk di sini untuk memeriksa pembaruan firmware terbaru</string>
+    <!-- xd. Preferences Category -->
+    <string name="xd_about_phone_owner_cat">Informasi pemilik</string>
+    <string name="xd_about_phone_information_cat">Informasi perangkat</string>
+    <string name="xd_about_phone_legalregulator_cat">Informasi Hukum dan Regulasi</string>
+    <string name="xd_about_phone_network_cat">Informasi jaringan</string>
+    <string name="xd_firmware_version_cat">Versi firmware</string>
+    <string name="xd_firmware_security_cat">Keamanan firmware</string>
+    <string name="xd_general_cat">Umum</string>
+    <string name="xd_category_ui">Antarmuka pengguna</string>
+    <string name="xd_category_screen">Layar</string>
+    <string name="xd_category_density">Kepadatan</string>
+    <string name="xd_category_gesture">Gestur layar</string>
+    <string name="xd_category_brightness">Kecerahan</string>
+    <string name="xd_about_core_team_cat">Pengembang inti</string>
+    <string name="xd_about_contributor_cat">Kontributor</string>
+    <!-- xd. About -->
+    <string name="xd_about_desc">xdroid adalah ROM Android kustom berbasis AOSP yang berfokus pada kesederhanaan dan minimalis dengan menjaga kelancaran dan pengoptimalan yang disediakan oleh AOSP.</string>
+    <string name="xd_about_core_xyzuan">Jody Yuantoro</string>
+    <string name="xd_about_core_xyzuan_role">Pendiri, Pengembang Utama, dan Perancang UI</string>
+    <string name="xd_about_core_friction">Firman Yanuar</string>
+    <string name="xd_about_core_friction_role">Desainer UI dan UX</string>
+    <string name="xd_about_core_eky">Eky Zakariah</string>
+    <string name="xd_about_core_eky_role">Pengembang front end</string>
+    <string name="xd_about_contributor_rdclxvi">Royan Karim</string>
+    <string name="xd_about_contributor_rdclxvi_role">Penerjemah Indonesia</string>
+    <string name="xd_about_contributor_iszon">Iszon</string>
+    <string name="xd_about_contributor_iszon_role">Penerjemah Polandia</string>
+    <string name="xd_about_contributor_vi">log1cs</string>
+    <string name="xd_about_contributor_vi_summary">Penerjemah Vietnam</string>
+    <!-- xd. About Phone -->
+    <string name="xd_device_name">Nama perangkat</string>
+    <string name="xd_chipset_type">Chipset</string>
+    <string name="xd_gpu">GPU</string>
+    <string name="xd_camera_mp">Kamera</string>
+    <string name="xd_screen_type">Layar</string>
+    <!-- xd. Build Status -->
+    <string name="xd_build_status">Perangkat anda tidak didukung secara resmi!</string>
+    <string name="xd_build_maintained_summary">Dikelola oleh %s</string>
+    <string name="xd_build_unmaintained_summary">Build ini tidak dikelola secara resmi</string>
+    <!-- SELinux Status -->
+    <string name="selinux_status">Status SELinux</string>
+    <string name="selinux_status_disabled">Dinonaktifkan</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Temukan sensor sidik jari di bagian depan tablet Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Temukan sensor sidik jari di bagian depan perangkat Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Temukan sensor sidik jari di bagian depan ponsel Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Temukan sensor sidik jari di bagian belakang tablet Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Temukan sensor sidik jari di bagian belakang perangkat Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Temukan sensor sidik jari di bagian belakang ponsel Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Temukan sensor sidik jari di bagian samping tablet Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">Temukan sensor sidik jari di bagian samping perangkat Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">Temukan sensor sidik jari di bagian samping ponsel Anda.</string>
+    <!-- Message shown when user touches the icon on the screen, instead of the real fingerprint sensor -->
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Sentuh sensor di bagian depan tablet Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Sentuh sensor di bagian depan perangkat Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Sentuh sensor di bagian depan ponsel Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Sentuh sensor di bagian belakang tablet Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Sentuh sensor di bagian belakang perangkat Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Sentuh sensor di bagian belakang ponsel Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Sentuh sensor di bagian samping tablet Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Sentuh sensor di bagian samping perangkat Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Sentuh sensor di bagian samping ponsel Anda.</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Hubungkan volume dering &amp; notifikasi</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Atur ulang statistik baterai?</string>
+    <string name="battery_stats_message">Statistik riwayat baterai akan diatur ulang</string>
+    <string name="battery_stats_clear">@string/proxy_clear_text</string>
+    <!-- Default getTimeSpentInApp string for Wellbeing to display. [CHAR LIMIT=NONE] -->
+    <string name="duration_less_than_one_minute">Kurang dari 1 menit</string>
+    <!-- Summary for Wellbeing screen time usage. [CHAR LIMIT=NONE] -->
+    <string name="screen_time_summary_usage_today">%1$s hari ini</string>
+    <!-- Game -->
+    <string name="game_dashboard_always_on_summary">Tampilkan pintasan Dasbor Game dalam game</string>
+    <string name="game_dashboard_always_on_title">Dasbor Game</string>
+    <string name="game_dashboard_dnd_rule_name">Bermain Game</string>
+    <string name="game_dashboard_dnd_summary">Hanya dapatkan notifikasi dari orang dan aplikasi penting saat bermain game</string>
+    <string name="game_dashboard_dnd_title">Jangan Ganggu untuk game</string>
+    <!-- Columbus -->
+    <string name="columbus_title">@string/columbus_name</string>
+    <string name="columbus_gesture_detected">Ketuk Cepat terdeteksi!</string>
+    <string name="columbus_gesture_enrollment_complete">Selesai</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Tidak sekarang</string>
+    <string name="columbus_gesture_enrollment_settings">Pergi ke Setelan</string>
+    <string name="columbus_gesture_enrollment_try_it">Cobalah</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Silakan pilih tindakan untuk dilakukan</string>
+    <string name="columbus_gesture_training_action_text">Pilih apa yang terjadi saat Anda menggunakan Ketuk Cepat. Anda dapat mengubahnya nanti di setelan.</string>
+    <string name="columbus_gesture_training_action_title">Pilih opsi Ketuk Cepat</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Ketuk dua kali 1 dari 2 yang terdeteksi</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Mari kita coba sekali lagi. Ketuk bagian belakang ponsel Anda dua kali dengan cepat.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Bagus!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Ketuk dua kali 2 dari 2 yang terdeteksi</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Anda siap untuk mulai menggunakan Ketuk Cepat</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Anda mengerti!</string>
+    <string name="columbus_gesture_training_enrolling_text">Ketuk bagian belakang ponsel Anda dua kali dengan cepat.</string>
+    <string name="columbus_gesture_training_enrolling_title">Coba Ketuk Cepat</string>
+    <string name="columbus_gesture_training_finished_text">Untuk mengubah kekuatan ketuk yang diperlukan untuk menggunakan Ketuk Cepat, pergi ke Setelan.</string>
+    <string name="columbus_gesture_training_finished_title">Anda telah menyiapkan Ketuk Cepat</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Anda baru saja mengetuk dua kali di bagian belakang perangkat Anda, yang memungkinkan Anda menggunakan Asisten saat bepergian. Anda dapat menyesuaikan gestur ini di setelan.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Ambil tangkapan layar, tampilkan notifikasi, atau mulai tindakan lain dalam dua ketukan.</string>
+    <string name="columbus_gesture_training_intro_title">Ketuk Cepat untuk tindakan cepat</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Silakan pilih aplikasi yang akan dibuka</string>
+    <string name="columbus_gesture_training_launch_text">Pilih aplikasi yang ingin Anda buka saat menggunakan Ketuk Cepat.</string>
+    <string name="columbus_gesture_training_launch_title">Pilih aplikasi untuk dibuka</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s setelan pintasan</string>
+    <string name="columbus_launch_settings_activity_title">Setelan Ketuk Cepat</string>
+    <string name="columbus_name">Ketuk Cepat</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">%1$s setelan</string>
+    <string name="columbus_setting_action_assistant_title">Akses asisten digital Anda</string>
+    <string name="columbus_setting_action_assistant_value">asisten</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Tidak ada aplikasi dipilih</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Aplikasi tidak dipasang</string>
+    <string name="columbus_setting_action_launch_title">Buka aplikasi</string>
+    <string name="columbus_setting_action_launch_value">luncurkan</string>
+    <string name="columbus_setting_action_notification_title">Tampilkan notifikasi</string>
+    <string name="columbus_setting_action_notification_value">notifikasi</string>
+    <string name="columbus_setting_action_open_app_title">Buka aplikasi</string>
+    <string name="columbus_setting_action_overview_title">Lihat aplikasi baru-baru ini</string>
+    <string name="columbus_setting_action_overview_value">tinjauan</string>
+    <string name="columbus_setting_action_play_pause_title">Putar atau jeda media</string>
+    <string name="columbus_setting_action_play_pause_value">media</string>
+    <string name="columbus_setting_action_screenshot_title">Ambil tangkapan layar</string>
+    <string name="columbus_setting_action_screenshot_value">tangkapan layar</string>
+    <string name="columbus_setting_actions_title">Ketuk bagian belakang ponsel dua kali untuk</string>
+    <string name="columbus_setting_additional_settings_title">Kekuatan Ketuk Cepat</string>
+    <string name="columbus_setting_app_selection_help_text">Pilih aplikasi yang akan dibuka saat Anda mengetuk bagian belakang ponsel dua kali. Jika Anda mencopot pemasangan aplikasi, Ketuk Cepat mati hingga Anda memilih aplikasi lain.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Pilih apa yang terjadi saat Anda membuka aplikasi ini menggunakan Ketuk Cepat.</string>
+    <string name="columbus_setting_enable_switch_title">Gunakan Ketuk Cepat</string>
+    <string name="columbus_setting_sensitivity_title">Membutuhkan ketukan yang lebih kuat</string>
+    <string name="columbus_summary">%1$s / %2$s</string>
+</resources>

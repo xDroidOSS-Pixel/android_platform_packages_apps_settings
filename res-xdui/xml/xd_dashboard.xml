@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2018 The Android Open Source Project
+  Copyright (C) 2021-2022 xdroid, xyzprjkt
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="top_level_settings">
+    
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="xd_my_account"
+        android:order="-110"
+        android:layout="@layout/xd_dashboard_account"/>
+
+    <Preference
+        android:key="xd_my_phone"
+        android:order="-105"
+        android:title="@string/xd_dashboard_device"
+        android:summary="xdroidOSS 3.5"
+        android:layout="@layout/xd_dashboard_phone"
+        settings:controller="com.xdroidui.preferences.xdFullRevisionController"
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"/>
+
+    <Preference
+        android:key="top_level_mnmlist"
+        android:order="-100"
+        android:title="@string/mnmlist_title"
+        settings:layout="@layout/xd_dashboard_pref_mnmlist"
+        android:fragment="com.xd.mnmlist.Dashboard"/>
+
+    <SwitchPreference
+        android:key="airplane_mode"
+        android:title="@string/airplane_mode"
+        android:order="-96"
+        settings:controller="com.android.settings.network.AirplaneModePreferenceController"/>
+
+    <Preference
+        android:fragment="com.android.settings.network.NetworkDashboardFragment"
+        android:key="internet_settings"
+        android:title="@string/xd_dashboard_network"
+        android:summary="@string/summary_placeholder"
+        android:order="-95"
+        settings:layout="@layout/xd_dashboard_pref_mid"
+        settings:keywords="@string/keywords_internet" />
+
+    <Preference
+        android:fragment="com.android.settings.TetherSettings"
+        android:key="tether_settings"
+        android:title="@string/xd_dashboard_portable_hotspot"
+        android:order="-94"
+        android:summary="@string/summary_placeholder"
+        settings:layout="@layout/xd_dashboard_pref_mid"
+        settings:keywords="@string/keywords_hotspot_tethering" />
+
+    <Preference
+        android:key="top_level_connected_devices"
+        android:order="-90"
+        android:title="@string/xd_dashboard_conectivity"
+        settings:layout="@layout/xd_dashboard_pref_bot"
+        android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"/>
+
+    <Preference
+        android:key="top_level_display"
+        android:order="-85"
+        android:title="@string/xd_dashboard_display"
+        settings:layout="@layout/xd_dashboard_pref_top"
+        android:fragment="com.android.settings.DisplaySettings"/>
+
+    <Preference
+        android:key="top_level_battery"
+        android:order="-75"
+        android:title="@string/xd_dashboard_battery"
+        settings:layout="@layout/xd_dashboard_pref_mid"
+        android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"/>
+
+    <Preference
+        android:key="top_level_sound"
+        android:order="-70"
+        android:title="@string/xd_dashboard_sound"
+        settings:layout="@layout/xd_dashboard_pref_bot"
+        android:fragment="com.android.settings.notification.SoundSettings"/>
+
+    <Preference
+        android:key="top_level_apps"
+        android:order="-65"
+        android:title="@string/xd_dashboard_apps"
+        settings:layout="@layout/xd_dashboard_pref_top"
+        android:fragment="com.android.settings.applications.AppDashboardFragment"/>
+
+    <Preference
+        android:key="top_level_notification"
+        android:order="-60"
+        android:title="@string/xd_dashboard_notif"
+        settings:layout="@layout/xd_dashboard_pref_mid"
+        android:fragment="com.android.settings.notification.ConfigureNotificationSettings"/>
+
+    <Preference
+        android:key="top_level_accounts"
+        android:order="-55"
+        android:title="@string/xd_dashboard_account"
+        settings:layout="@layout/xd_dashboard_pref_mid"
+        android:fragment="com.android.settings.accounts.AccountDashboardFragment"/>
+
+    <Preference
+        android:key="top_level_storage"
+        android:order="-50"
+        android:title="@string/xd_dashboard_storage"
+        settings:layout="@layout/xd_dashboard_pref_bot"
+        android:fragment="com.android.settings.deviceinfo.StorageDashboardFragment"/>
+
+    <Preference
+        android:key="top_level_privacy"
+        android:order="-45"
+        android:title="@string/xd_dashboard_privacy"
+        settings:layout="@layout/xd_dashboard_pref_top"
+        android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"/>
+
+    <Preference
+        android:key="top_level_location"
+        android:order="-40"
+        android:title="@string/xd_dashboard_location"
+        settings:layout="@layout/xd_dashboard_pref_mid"
+        android:fragment="com.android.settings.location.LocationSettings"/>
+
+    <Preference
+        android:key="top_level_security"
+        android:order="-35"
+        android:title="@string/xd_dashboard_security"
+        settings:layout="@layout/xd_dashboard_pref_bot"
+        android:fragment="com.android.settings.security.SecuritySettings"
+        settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
+
+    <Preference
+        android:key="top_level_accessibility"
+        android:order="-30"
+        android:title="@string/xd_dashboard_accessibility"
+        settings:layout="@layout/xd_dashboard_pref_top"
+        android:fragment="com.android.settings.accessibility.AccessibilitySettings"/>
+
+    <Preference
+        android:key="top_level_support"
+        android:order="-5"
+        android:title="@string/xd_dashboard_support"
+        settings:layout="@layout/xd_dashboard_pref_mid"
+        settings:controller="com.android.settings.support.SupportPreferenceController"/>
+
+    <Preference
+        android:key="top_level_system"
+        android:order="100"
+        android:title="@string/xd_dashboard_system"
+        settings:layout="@layout/xd_dashboard_pref_bot"
+        android:fragment="com.android.settings.system.SystemDashboardFragment"/>
+
+</PreferenceScreen>
